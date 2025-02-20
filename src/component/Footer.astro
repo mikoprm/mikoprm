@@ -1,0 +1,45 @@
+---
+
+---
+
+<footer>
+  <div role="region" class="wrapper-primary footer">
+    <p>
+      &copy<span id="year"></span>
+    </p>
+    <p>| All right reserved | Made by :</p>
+    <a href="/" class="nav__logo" title="Back to Home"
+      >Miik<img src="/smile.svg" alt="logo img" /></a
+    >
+  </div>
+</footer>
+
+<style>
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--size-x-small);
+    padding-block: var(--clamp-small-xl);
+    border-top: var(--border-dark);
+  }
+
+  .footer p {
+    text-align: center;
+  }
+
+  .nav__logo {
+    font-size: var(--clamp-2-base);
+    font-weight: var(--fw-medium);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--link-color);
+  }
+
+  .nav__logo img {
+    width: var(--clamp-base);
+    height: var(--clamp-base);
+  }
+</style>

@@ -1,0 +1,366 @@
+/* inter-100 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/inter-v13-latin-100.woff2') format('woff2');
+}
+
+/* inter-200 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/inter-v13-latin-200.woff2') format('woff2');
+}
+
+/* inter-300 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/inter-v13-latin-300.woff2') format('woff2');
+}
+
+/* inter-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2');
+}
+
+/* inter-500 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/inter-v13-latin-500.woff2') format('woff2');
+}
+
+/* inter-600 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/inter-v13-latin-600.woff2') format('woff2');
+}
+
+/* inter-700 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/inter-v13-latin-700.woff2') format('woff2');
+}
+
+/* inter-800 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/inter-v13-latin-800.woff2') format('woff2');
+}
+
+/* inter-900 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/inter-v13-latin-900.woff2') format('woff2');
+}
+
+:root {
+    --light-base: #ffffff;
+    --light-accent: #efeff3;;
+    --dark-base: #000000;
+    --dark-mode: #080808;
+    --dark-accent: #303030;
+    --grey-color: #202020;
+    --blue-color: #440bd4;
+    --purple-color: #6200d2;
+    --link-color: #00aaff;
+    --accent-color: #ffd044;
+    --t-accent-color: rgba(255, 208, 68, 0.1);
+    --gradient-primary: linear-gradient(to right bottom, #00aaff, #2626c2);
+
+    --opacity: .8;
+    --border-light: 1px solid var(--light-base);
+    --border-dark: 1px solid var(--dark-accent);
+    --border-accent: 1px solid var(--accent-color);
+    --box-shadow: 0px 0px 10px 0px var(--light-base);
+    --drop-shadow: 0px 0px 2px rgba(255, 255, 255, 0.3);
+    --transition: all 200ms ease-in-out;
+    --fadeIn-animation: fadeIn 200ms ease-in-out forwards;
+    --fadeOut-animation: fadeOut 200ms ease-in-out forwards;
+
+    --size-xx-small: 0.188rem;
+    --size-x-small: 0.313rem;
+    --size-small-base: 0.5rem;
+    --size-small-sm: 0.625rem;
+    --size-small-xl: 0.75rem;
+    --size-base-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-1-xl: 1.125rem;
+    --size-2-base: 1.25rem;
+    --size-2-xl: 1.5rem;
+    --size-3-base: 1.875rem;
+    --size-3-xl: 2.25rem;
+    --size-4-base: 2.5rem;
+    --size-4-xl: 3rem;
+    --size-5-base: 3.125rem;
+    --size-6-base: 3.75rem;
+    --size-7-base: 4.375rem;
+
+    /*Clamp*/
+    --clamp-x-small: clamp(0.188rem, 1vw, 0.313rem);
+    --clamp-small: clamp(0.438rem, 1vw, 0.625rem);
+    --clamp-small-xl: clamp(0.625rem, 1vw, 0.75rem);
+    --clamp-base-sm: clamp(0.75rem, 1vw, 0.875rem);
+    --clamp-base: clamp(0.875rem, 2vw, 1rem);
+    --clamp-1-xl: clamp(1rem, 2vw, 1.125rem);
+    --clamp-2-base: clamp(1rem, 2vw, 1.25rem);
+    --clamp-2-xl: clamp(1.25rem, 2.4vw, 1.5rem);
+    --clamp-3-base: clamp(1.375rem, 3vw, 1.875rem);
+    --clamp-3-xl: clamp(1.5rem, 3.2vw, 2rem);
+    --clamp-4-base: clamp(2rem, 4vw, 2.5rem);
+    --clamp-4-xl: clamp(2.5rem, 4.8vw, 3rem);
+    --clamp-5-base: clamp(2.25rem, 5vw, 3.125rem);
+    --clamp-5-xl: clamp(3.5rem, 7.2vw, 4.5rem);
+
+    --fw-thin: 100;
+    --fw-extraLight: 200;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semiBold: 600;
+    --fw-bold: 700;
+    --fw-extraBold: 800;
+    --fw-black: 900;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline-offset: var(--size-small-base);
+    text-decoration: none;
+    list-style: none;
+    line-height: 1.5;
+    font-family: 'inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+        'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    background-color: var(--dark-mode);
+}
+
+h1,
+.h1 {
+    font-size: var(--clamp-4-base);
+    font-weight: var(--fw-bold);
+    line-height: 1.1;
+    text-align: center;
+}
+
+h2,
+.h2 {
+    font-size: var(--clamp-3-xl);
+    font-weight: var(--fw-bold);
+    line-height: 1.2;
+    text-align: center;
+}
+
+h3,
+.h3 {
+    font-size: var(--clamp-2-xl);
+    font-weight: var(--fw-medium);
+    line-height: 1.2;
+}
+
+h4,
+.h4 {
+    font-size: var(--clamp-1-xl);
+    font-weight: var(--fw-medium);
+    line-height: 1.2;
+}
+
+p,
+.p,
+address,
+label,
+input,
+textarea {
+    font-size: var(--clamp-base);
+    font-weight: var(--fw-light);
+    font-style: normal;
+    color: var(--light-accent);
+}
+
+input,
+textarea {
+    border: none;
+    border-bottom: var(--borderDark);
+    background-color: transparent;
+    padding: .3em .5em;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid var(--primary-color);
+    border-radius: 5px;
+    border-bottom: none;
+}
+
+img,
+svg,
+video {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: var(--size-x-small);
+}
+
+a,
+button,
+.button {
+    font-size: var(--clamp-base);
+    font-weight: var(--fw-regular);
+    line-height: normal;
+    color: inherit;
+    text-align: center;
+    transition: var(--transition);
+}
+
+a:hover,
+a:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: var(--size-x-small);
+    opacity: var(--opacity);
+}
+
+button,
+.button {
+    color: var(--light-base);
+    background-color: var(--grey-color);
+    border: none;
+    padding: .75em 1.25em;
+    border-radius: var(--clamp-x-small);
+    cursor: pointer;
+}
+
+button:hover,
+button:focus-visible,
+.button:hover,
+.button:focus-visible,
+.tag-name:hover,
+.tag-name:focus-visible {
+    opacity: var(--opacity);
+    text-decoration: none;
+}
+
+.button-primary {
+    background-image: var(--gradient-primary);
+}
+
+.button-secondary {
+    background-color: var(--purple-color);
+}
+
+.button-variant {
+    color: var(--link-color);
+    background-color: var(--dark-base);
+}
+
+.text-small {
+    font-size: var(--size-base-sm);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.tag-name {
+    font-size: var(--clamp-base);
+    font-weight: var(--fw-regular);
+    color: var(--accent-color);
+    background-color: var(--t-accent-color);
+    padding: .25em .5em;
+    border: var(--border-accent);
+    border-radius: var(--size-x-small);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.link {
+    color: var(--link-color);
+}
+
+.wrapper-body {
+    max-inline-size: 90rem;
+    margin-inline: auto;
+}
+
+.wrapper-primary {
+    max-inline-size: min(100% - clamp(.5rem, 5vw, 8rem), 75rem);
+    margin-inline: auto;
+}
+
+.wrapper-contents {
+    padding-block: min(8%, 2.5rem);
+}
+
+.fade-in {
+    animation: fadeIn 200ms ease-in-out;
+}
+
+.fade-out {
+    animation: fadeOut 200ms ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        display: block;
+        opacity: 1;
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
+main,
+.main {
+    width: min(100% - clamp(0rem, 5vw, 8rem), 68.75rem);
+    margin-top: var(--clamp-5-xl);
+}

@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 202 155" width="202" height="155">
+	<title>github-mark-white</title>
+	<defs>
+		<image width="240" height="240" id="img1" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgNDggNDgiIHdpZHRoPSIyNDBweCIgaGVpZ2h0PSIyNDBweCI+PHBhdGggZmlsbD0iIzRjYWY1MCIgZD0iTTQ1LDE2LjJsLTUsMi43NWwtNSw0Ljc1TDM1LDQwaDdjMS42NTcsMCwzLTEuMzQzLDMtM1YxNi4yeiIvPjxwYXRoIGZpbGw9IiMxZTg4ZTUiIGQ9Ik0zLDE2LjJsMy42MTQsMS43MUwxMywyMy43VjQwSDZjLTEuNjU3LDAtMy0xLjM0My0zLTNWMTYuMnoiLz48cG9seWdvbiBmaWxsPSIjZTUzOTM1IiBwb2ludHM9IjM1LDExLjIgMjQsMTkuNDUgMTMsMTEuMiAxMiwxNyAxMywyMy43IDI0LDMxLjk1IDM1LDIzLjcgMzYsMTciLz48cGF0aCBmaWxsPSIjYzYyODI4IiBkPSJNMywxMi4yOThWMTYuMmwxMCw3LjVWMTEuMkw5Ljg3Niw4Ljg1OUM5LjEzMiw4LjMwMSw4LjIyOCw4LDcuMjk4LDhoMEM0LjkyNCw4LDMsOS45MjQsMywxMi4yOTh6Ii8+PHBhdGggZmlsbD0iI2ZiYzAyZCIgZD0iTTQ1LDEyLjI5OFYxNi4ybC0xMCw3LjVWMTEuMmwzLjEyNC0yLjM0MUMzOC44NjgsOC4zMDEsMzkuNzcyLDgsNDAuNzAyLDhoMCBDNDMuMDc2LDgsNDUsOS45MjQsNDUsMTIuMjk4eiIvPjwvc3ZnPg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="gmail" href="#img1" transform="matrix(.938,0,0,.938,-11,-35)"/>
+</svg>

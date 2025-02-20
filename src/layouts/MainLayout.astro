@@ -1,0 +1,34 @@
+---
+import "../styles/global.css";
+import Navbar from "../component/Navbar.astro";
+import Footer from "../component/Footer.astro";
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/smile.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="Hai, hello there! Hope you been well and healty :D "
+    />
+    <meta name="keywords" content="Miko Website" />
+    <meta name="author" content="Miko" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div role="region" class="wrapper-body">
+      <Navbar />
+      <main class="wrapper-primary main">
+        <slot />
+      </main>
+      <Footer />
+    </div>
+    <script>
+      import "../js/script.js";
+    </script>
+  </body>
+</html>

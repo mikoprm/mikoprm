@@ -1,0 +1,355 @@
+---
+import accordion2 from "../assets/accordion2.webp";
+import accordion from "../assets/accordion.webp";
+import navbar from "../assets/navbar.webp";
+import august from "../assets/august-photography.webp";
+import expreshop from "../assets/expreshop.webp";
+import coffeeBrow from "../assets/coffeeBrow.webp";
+import photography from "../assets/photography-website.webp";
+import { Image } from "astro:assets";
+import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/global.css";
+---
+
+<MainLayout title="Project & Source Code">
+  <section aria-labelledby="project">
+    <div role="region" class="wrapper-contents project">
+      <h2 class="h1" id="project">Resent Projects & Source Code</h2>
+      <div class="tab__heading">
+        <h3>Tab to view</h3>
+        <ul class="project__tabs">
+          <li>
+            <button data-tab-target="#landingPage" class="tag-name active"
+              >Landing Page</button
+            >
+          </li>
+          <li>
+            <button data-tab-target="#html" class="tag-name"
+              >HTML CSS & JS</button
+            >
+          </li>
+          <li>
+            <button data-tab-target="#js" class="tag-name">Javascript</button>
+          </li>
+          <li>
+            <button data-tab-target="#design" class="tag-name"
+              >Web Design</button
+            >
+          </li>
+          <li>
+            <button data-tab-target="#others" class="tag-name">Others</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="tab__contents">
+        <div data-tab-content id="landingPage" class="project__contents active">
+          <article class="project__content">
+            <Image
+              src={coffeeBrow}
+              alt="coffeeBrow website image"
+              class="project__img"
+            />
+            <aside class="project__description">
+              <h3>
+                CoffeeBrow : The best quality coffee beans for the best coffee
+                brew.
+              </h3>
+              <p>
+                In this project i made a static responsive landing page coffe
+                Shop website with HTML CSS JS.
+              </p>
+              <div role="group" class="project__links">
+                <a
+                  href="https://mikoprn.github.io/CoffeeBrow/"
+                  target="_blank"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a
+                  href="https://github.com/Mikoprn/CoffeeBrow"
+                  target="_blank"
+                  class="button">Source Code</a
+                >
+              </div>
+            </aside>
+          </article>
+
+          <article class="project__content">
+            <Image
+              src={photography}
+              alt="photography website image"
+              class="project__img"
+            />
+            <aside class="project__description">
+              <h3>Photography Responsive Website</h3>
+              <p>
+                In this project i made a static responsive landing page
+                photography website with HTML CSS JS.
+              </p>
+              <div role="group" class="project__links">
+                <a
+                  href="https://photography--website.pages.dev/"
+                  target="_blank"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a
+                  href="https://github.com/Mikoprn/Photography--website"
+                  target="_blank"
+                  class="button">Source Code</a
+                >
+              </div>
+            </aside>
+          </article>
+
+          <article class="project__content">
+            <Image
+              src={expreshop}
+              alt="Expreshop website image"
+              class="project__img"
+            />
+            <aside class="project__description">
+              <h3>Expreshop Responsive Website</h3>
+              <p>
+                In this project i made a static responsive landing page
+                Expreshop website with HTML CSS JS.
+              </p>
+              <div role="group" class="project__links">
+                <a
+                  href="https://mikoprn.github.io/EXpreshop/"
+                  target="_blank"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a
+                  href="https://github.com/Mikoprn/EXpreshop"
+                  target="_blank"
+                  class="button">Source Code</a
+                >
+              </div>
+            </aside>
+          </article>
+
+          <article class="project__content">
+            <Image
+              src={august}
+              alt="August photography website image"
+              class="project__img"
+            />
+            <aside class="project__description">
+              <h3>August Photography Responsive Website</h3>
+              <p>
+                In this project i made a static responsive landing page August
+                Photography website with HTML CSS JS.
+              </p>
+              <div role="group" class="project__links">
+                <a
+                  href="https://mikoprn.github.io/August-Photography/"
+                  target="_blank"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a
+                  href="https://github.com/Mikoprn/August-Photography"
+                  target="_blank"
+                  class="button">Source Code</a
+                >
+              </div>
+            </aside>
+          </article>
+        </div>
+        <div data-tab-content id="html" class="project__contents">
+          <article class="project__content">
+            <Image
+              src={navbar}
+              alt="Responsive navigation bar"
+              class="project__img"
+            />
+            <aside class="project__description">
+              <h3>Responsive Navigation Bar</h3>
+              <p>
+                In this project i made a responsive navigation with HTML CSS &
+                JS, with menu slide below header/navbar.
+              </p>
+              <div role="group" class="project__links">
+                <a
+                  href="https://mikoprn.github.io/Resnav/"
+                  target="_blank"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a
+                  href="https://github.com/Mikoprn/Resnav"
+                  target="_blank"
+                  class="button">Source Code</a
+                >
+                <a
+                  href="https://codepen.io/mikoprn/pen/ogNbjrL"
+                  target="_blank"
+                  class="button button-secondary">Codepen</a
+                >
+              </div>
+            </aside>
+          </article>
+          <article class="project__content">
+            <Image src={accordion} alt="Accordion FAQ" class="project__img" />
+            <aside class="project__description">
+              <h3>Accordion FAQ</h3>
+              <p>
+                In this project i made a simple Accordion FAQ using HTML CSS &
+                JavaScript.
+              </p>
+              <div role="group" class="project__links">
+                <a
+                  href="https://mikoprn.github.io/Accordion/"
+                  target="_blank"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a
+                  href="https://github.com/Mikoprn/Accordion"
+                  target="_blank"
+                  class="button">Source Code</a
+                >
+                <a
+                  href="https://codepen.io/mikoprn/pen/EaxPyEz"
+                  target="_blank"
+                  class="button button-secondary">Codepen</a
+                >
+              </div>
+            </aside>
+          </article>
+          <article class="project__content">
+            <Image src={accordion2} alt="Accordion FAQ" class="project__img" />
+            <aside class="project__description">
+              <h3>Accordion FAQ Style 2</h3>
+              <p>
+                In this project i made a simple Accordion FAQ with first
+                question open using HTML CSS & JavaScript.
+              </p>
+              <div role="group" class="project__links">
+                <a
+                  href="https://mikoprn.github.io/Accordion-2/"
+                  target="_blank"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a
+                  href="https://github.com/Mikoprn/Accordion-2"
+                  target="_blank"
+                  class="button">Source Code</a
+                >
+                <a
+                  href="https://codepen.io/mikoprn/pen/qEBbZQQ"
+                  target="_blank"
+                  class="button button-secondary">Codepen</a
+                >
+              </div>
+            </aside>
+          </article>
+        </div>
+        <div data-tab-content id="js" class="project__contents">
+          <h3>Coming Soon...</h3>
+        </div>
+        <div data-tab-content id="design" class="project__contents">
+          <h3>Coming Soon...</h3>
+        </div>
+        <div data-tab-content id="others" class="project__contents">
+          <h3>Others</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout>
+
+<style>
+  .project {
+    display: grid;
+    gap: var(--clamp-3-base);
+  }
+
+  h2 {
+    margin-bottom: var(--clamp-base);
+  }
+
+  .tab__heading h3 {
+    width: fit-content;
+    border-bottom: var(--border-light);
+    border-width: var(--size-xx-small);
+    border-color: var(--link-color);
+    border-image: var(--gradient-primary) 1 0%;
+    margin-bottom: var(--clamp-base);
+  }
+
+  .project__tabs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--clamp-base);
+    margin-bottom: var(--clamp-base);
+  }
+
+  .project__contents {
+    display: grid;
+    gap: var(--clamp-3-base);
+  }
+
+  .project__content {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--clamp-2-xl);
+  }
+
+  .project__content:not(:last-child) {
+    margin-bottom: var(--clamp-3-base);
+  }
+
+  .project__img {
+    flex: 1;
+    width: clamp(270px, 45vw, 500px);
+    aspect-ratio: 16 / 9;
+    border: var(--border-dark);
+    border-width: var(--size-xx-small);
+  }
+
+  .project__description {
+    flex: 1;
+  }
+
+  .project__description p {
+    margin-block: var(--size-small-sm) var(--size-base);
+  }
+
+  .project__links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--size-base);
+  }
+
+  .active[data-tab-target] {
+    color: var(--dark-base);
+    background-color: var(--accent-color);
+  }
+
+  [data-tab-content] {
+    display: none;
+    opacity: 0;
+    animation: var(--fadeOut-animation);
+  }
+
+  .active[data-tab-content] {
+    display: grid;
+    opacity: 1;
+    animation: var(--fadeIn-animation);
+  }
+
+  @media (max-width: 37.5em) {
+    .project__content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .project__img {
+      width: 100%;
+    }
+
+    .project__links {
+      justify-content: center;
+    }
+  }
+</style>
