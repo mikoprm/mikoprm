@@ -81,7 +81,7 @@
 
 :root {
     --light-base: #ffffff;
-    --light-accent: #efeff3;;
+    --light-accent: #efeff3;
     --dark-base: #000000;
     --dark-mode: #080808;
     --dark-accent: #303030;
@@ -103,12 +103,14 @@
     --fadeIn-animation: fadeIn 200ms ease-in-out forwards;
     --fadeOut-animation: fadeOut 200ms ease-in-out forwards;
 
+    /*Size*/
     --size-xx-small: 0.188rem;
     --size-x-small: 0.313rem;
     --size-small-base: 0.5rem;
-    --size-small-sm: 0.625rem;
+    --size-small-l: 0.625rem;
     --size-small-xl: 0.75rem;
-    --size-base-sm: 0.875rem;
+    --size-base-xs: 0.875rem;
+    --size-base-sm: 0.938rem;
     --size-base: 1rem;
     --size-1-xl: 1.125rem;
     --size-2-base: 1.25rem;
@@ -125,8 +127,9 @@
     --clamp-x-small: clamp(0.188rem, 1vw, 0.313rem);
     --clamp-small: clamp(0.438rem, 1vw, 0.625rem);
     --clamp-small-xl: clamp(0.625rem, 1vw, 0.75rem);
-    --clamp-base-sm: clamp(0.75rem, 1vw, 0.875rem);
-    --clamp-base: clamp(0.875rem, 2vw, 1rem);
+    --clamp-base-xs: clamp(0.75rem, 1vw, 0.875rem);
+    --clamp-base-sm: clamp(0.875rem, 1vw, 0.938rem);
+    --clamp-base: clamp(0.938rem, 2vw, 1rem);
     --clamp-1-xl: clamp(1rem, 2vw, 1.125rem);
     --clamp-2-base: clamp(1rem, 2vw, 1.25rem);
     --clamp-2-xl: clamp(1.25rem, 2.4vw, 1.5rem);
@@ -166,7 +169,6 @@
 html {
     color-scheme: dark;
     scroll-behavior: smooth;
-    scroll-padding-top: 7rem;
     background-color: var(--dark-mode);
 }
 
@@ -174,7 +176,7 @@ h1,
 .h1 {
     font-size: var(--clamp-4-base);
     font-weight: var(--fw-bold);
-    line-height: 1.1;
+    line-height: 1.;
     text-align: center;
 }
 
@@ -201,30 +203,17 @@ h4,
 }
 
 p,
-.p,
-address,
-label,
-input,
-textarea {
+.p {
     font-size: var(--clamp-base);
     font-weight: var(--fw-light);
-    font-style: normal;
     color: var(--light-accent);
 }
 
-input,
-textarea {
-    border: none;
-    border-bottom: var(--borderDark);
-    background-color: transparent;
-    padding: .3em .5em;
-}
-
-input:focus,
-textarea:focus {
-    outline: 2px solid var(--primary-color);
-    border-radius: 5px;
-    border-bottom: none;
+small,
+.small {
+    font-size: var(--clamp-base-sm);
+    font-weight: var(--fw-light);
+    color: var(--light-accent);
 }
 
 img,
@@ -289,16 +278,12 @@ button:focus-visible,
     background-color: var(--dark-base);
 }
 
-.text-small {
-    font-size: var(--size-base-sm);
-}
-
 .text-center {
     text-align: center;
 }
 
 .tag-name {
-    font-size: var(--clamp-base);
+    font-size: var(--clamp-base-sm);
     font-weight: var(--fw-regular);
     color: var(--accent-color);
     background-color: var(--t-accent-color);
