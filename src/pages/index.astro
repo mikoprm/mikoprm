@@ -16,10 +16,10 @@ import "../styles/global.css";
       </div>
       <p>
         I am self-taught developer based in Indonesia. Passionate about building
-        accessible user, scalable web applications, friendly responsive
-        website, curious about solving problems and creating innovative
-        solutions. Looking for exciting opportunities, likes to focus on
-        accessibility when developing.
+        accessible user, scalable web applications, friendly responsive website,
+        curious about solving problems and creating innovative solutions.
+        Looking for exciting opportunities, likes to focus on accessibility when
+        developing.
       </p>
     </div>
   </section>
@@ -235,7 +235,7 @@ import "../styles/global.css";
             </div>
           </aside>
         </article>
-        <a href="/project" class="button works__link"
+        <a href="/project" class="button works__projects-link"
           ><h4>See All Projects &#10148;</h4>
         </a>
       </div>
@@ -324,10 +324,14 @@ import "../styles/global.css";
     border-radius: 0;
   }
 
-  .about,
-  .works {
+  .about
+  {
     display: grid;
     gap: var(--clamp-3-base);
+  }
+
+  .works h2 {
+    margin-bottom: var(--clamp-4-xl);
   }
 
   .works__content {
@@ -337,7 +341,7 @@ import "../styles/global.css";
   }
 
   .works__content:not(:last-child) {
-    margin-bottom: var(--clamp-3-base);
+    margin-bottom: var(--clamp-5-base);
   }
 
   .works__img {
@@ -353,12 +357,13 @@ import "../styles/global.css";
 
   .works__links {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: var(--size-base);
   }
 
-  .works__link {
-    justify-self: left;
+  .works__projects-link {
+    display: inline-block;
   }
 
   @media (max-width: 62.5em) {
