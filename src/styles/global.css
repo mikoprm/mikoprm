@@ -103,7 +103,6 @@
     --fadeIn-animation: fadeIn 200ms ease-in-out forwards;
     --fadeOut-animation: fadeOut 200ms ease-in-out forwards;
 
-    /*Size*/
     --size-xx-small: 0.188rem;
     --size-x-small: 0.313rem;
     --size-small-base: 0.5rem;
@@ -125,7 +124,7 @@
 
     /*Clamp*/
     --clamp-x-small: clamp(0.188rem, 1vw, 0.313rem);
-    --clamp-small: clamp(0.438rem, 1vw, 0.625rem);
+    --clamp-small-l: clamp(0.438rem, 1vw, 0.625rem);
     --clamp-small-xl: clamp(0.625rem, 1vw, 0.75rem);
     --clamp-base-xs: clamp(0.75rem, 1vw, 0.875rem);
     --clamp-base-sm: clamp(0.875rem, 1vw, 0.938rem);
@@ -270,12 +269,11 @@ button:focus-visible,
 }
 
 .button-secondary {
-    background-color: var(--purple-color);
+    background-color: var(--dark-base);
 }
 
-.button-variant {
-    color: var(--link-color);
-    background-color: var(--dark-base);
+.button-accent {
+    background-color: var(--purple-color);
 }
 
 .text-center {
@@ -289,7 +287,7 @@ button:focus-visible,
     background-color: var(--t-accent-color);
     padding: .25em .5em;
     border: var(--border-accent);
-    border-radius: var(--size-x-small);
+    border-radius: var(--clamp-x-small);
     transition: var(--transition);
     cursor: pointer;
 }
