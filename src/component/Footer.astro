@@ -1,45 +1,49 @@
 ---
-
+import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/global.css";
 ---
 
-<footer>
-  <div class="wrapper-primary footer">
-    <small>
-      &copy<span id="year"></span>
-    </small>
-    <small>| All right reserved | Made by :</small>
-    <a href="/" class="nav__logo" title="Back to Home"
-      >Miik<img src="/smile.svg" alt="logo img" /></a
-    >
-  </div>
-</footer>
+<MainLayout title="Contact Me">
+  <section aria-labelledby="contact">
+    <div class="wrapper-contents contact">
+      <h1 id="contact">Contact Me.</h1>
+      <p>
+        I'm open to discussing web development projects or partnership
+        opportunities. My inbox always open, whether you have question or just
+        send hi, i'll try my best to get back to you. Feel free to reach out!
+      </p>
+      <div class="contact__email">
+        <img
+          src="/gmail.svg"
+          alt="Gmail"
+          width="20"
+          height="20"
+          title="Gmail"
+          loading="lazy"
+          decoding="async"
+        />
+        <p>Email :</p>
+        <a href="mailto:miiko.prn@gmail.com" class="link">miiko.prn@gmail.com</a
+        >
+      </div>
+    </div>
+  </section>
+</MainLayout>
 
 <style>
-  .footer {
+  .contact {
+    max-width: 43.75rem;
+    min-height: calc(91dvh - var(--clamp-5-xl));
+    margin-inline: auto;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    gap: var(--clamp-base);
+  }
+
+  .contact__email {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     gap: var(--size-x-small);
-    padding-block: var(--clamp-base-sm);
-    border-top: var(--border-dark);
-  }
-
-  .footer p {
-    text-align: center;
-  }
-
-  .nav__logo {
-    font-size: var(--clamp-base);
-    font-weight: var(--fw-medium);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--link-color);
-  }
-
-  .nav__logo img {
-    width: var(--clamp-base);
-    height: var(--clamp-base);
   }
 </style>
