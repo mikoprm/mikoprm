@@ -137,7 +137,7 @@
     --clamp-3-xl: clamp(1.5rem, 3.2vw, 2rem);
     --clamp-4-base: clamp(2rem, 4vw, 2.5rem);
     --clamp-4-xl: clamp(2.5rem, 4.8vw, 3rem);
-    --clamp-5-base: clamp(2.25rem, 5vw, 3.125rem);
+    --clamp-5-base: clamp(2.625rem, 5vw, 3.125rem);
     --clamp-5-xl: clamp(3.5rem, 7.2vw, 4.5rem);
 
     --fw-thin: 100;
