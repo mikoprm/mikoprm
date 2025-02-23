@@ -5,10 +5,8 @@ let lastScrollY = window.scrollY;
 window.addEventListener("scroll", () => {
   if (lastScrollY < window.scrollY) {
     header.classList.add("header-hidden");
-    // header.classList.remove("header-scrolled");
   } else {
     header.classList.remove("header-hidden");
-    // header.classList.add("header-scrolled");
   }
   lastScrollY = window.scrollY;
 });
@@ -16,7 +14,6 @@ window.addEventListener("scroll", () => {
 // Mobile Navigation
 const menuBtn = document.querySelector(".nav__mobile-btn");
 const navMenu = document.querySelector(".nav__menu");
-// const navLinks = document.querySelectorAll("nav__link");
 
 menuBtn.addEventListener("click", () => {
   navMenu.classList.toggle("active");
