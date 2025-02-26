@@ -56,10 +56,13 @@ import "../styles/global.css";
               <div class="project__links">
                 <a
                   href="https://devxyz.vercel.app/"
+                  target="_blank"
                   class="button button-primary">View Live Demo</a
                 >
-                <a href="https://github.com/Mikoprn/Devxyz" class="button"
-                  >Source Code</a
+                <a
+                  href="https://github.com/Mikoprn/Devxyz"
+                  target="_blank"
+                  class="button">Source Code</a
                 >
               </div>
             </aside>
@@ -252,7 +255,7 @@ import "../styles/global.css";
           <h3>Coming Soon...</h3>
         </div>
         <div data-tab-content id="others" class="project__contents">
-          <h3>Others</h3>
+          <h3>Coming Soon...</h3>
         </div>
       </div>
     </div>
@@ -289,11 +292,11 @@ import "../styles/global.css";
   .project__content {
     display: flex;
     justify-content: space-between;
-    gap: var(--clamp-2-xl);
+    gap: var(--clamp-5-base);
   }
 
   .project__content:not(:last-child) {
-    margin-bottom: var(--clamp-5-base);
+    margin-bottom: var(--clamp-5-xl);
   }
 
   .project__content:hover .project__img,
@@ -309,12 +312,8 @@ import "../styles/global.css";
     transition: var(--transition);
   }
 
-  .project__description {
-    flex: 1;
-  }
-
   .project__description p {
-    margin-block: var(--size-small-l) var(--size-base);
+    margin-block: var(--clamp-small-base) var(--clamp-3-base);
   }
 
   .project__links {
@@ -344,7 +343,10 @@ import "../styles/global.css";
   @media (max-width: 43.75em) {
     .project__content {
       flex-direction: column;
-      align-items: center;
+    }
+
+    .project__content {
+      gap: var(--size-small-l);
     }
 
     .project__img {
@@ -353,6 +355,19 @@ import "../styles/global.css";
 
     .project__links {
       justify-content: center;
+    }
+  }
+
+  @media (max-width: 26.563em) {
+    .project__links {
+      justify-content: space-between;
+      gap: var(--size-x-small);
+    }
+  }
+
+  @media (max-width: 20em) {
+    .project__links a {
+      width: 100%;
     }
   }
 </style>
