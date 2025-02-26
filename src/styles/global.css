@@ -92,17 +92,17 @@
     --accent-color: #ffd044;
     --t-accent-color: rgba(255, 208, 68, 0.1);
     --gradient-primary: linear-gradient(to right bottom, #00aaff, #2626c2);
-
     --opacity: .8;
     --border-light: 1px solid var(--light-base);
     --border-dark: 1px solid var(--dark-accent);
     --border-accent: 1px solid var(--accent-color);
-    --box-shadow: 0px 0px 10px 0px var(--light-base);
+    --box-shadow: 0px 0px 0.625rem 0.188rem;
     --drop-shadow: 0px 0px 2px rgba(255, 255, 255, 0.3);
     --transition: all 200ms ease-in-out;
     --fadeIn-animation: fadeIn 200ms ease-in-out forwards;
     --fadeOut-animation: fadeOut 200ms ease-in-out forwards;
 
+    /*Sizes*/
     --size-xx-small: 0.188rem;
     --size-x-small: 0.313rem;
     --size-small-base: 0.5rem;
@@ -139,6 +139,7 @@
     --clamp-5-base: clamp(2.625rem, 5vw, 3.125rem);
     --clamp-5-xl: clamp(3.5rem, 7.2vw, 4.5rem);
 
+    /*Font Weight*/
     --fw-thin: 100;
     --fw-extraLight: 200;
     --fw-light: 300;
@@ -175,7 +176,7 @@ h1,
 .h1 {
     font-size: var(--clamp-4-base);
     font-weight: var(--fw-bold);
-    line-height: 1.;
+    line-height: 1.1;
     text-align: center;
 }
 
