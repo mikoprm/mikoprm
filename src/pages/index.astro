@@ -321,6 +321,7 @@ import "../styles/global.css";
     filter: drop-shadow(var(--drop-shadow));
     border-bottom: var(--border-dark);
     border-width: var(--size-x-small);
+    pointer-events: none;
     user-select: none;
   }
 
@@ -358,11 +359,11 @@ import "../styles/global.css";
   .works__content {
     display: flex;
     justify-content: space-between;
-    gap: var(--clamp-3-base);
+    gap: var(--clamp-5-base);
   }
 
   .works__content:not(:last-child) {
-    margin-bottom: var(--clamp-5-base);
+    margin-bottom: var(--clamp-5-xl);
   }
 
   .works__content:hover .works__img,
@@ -379,7 +380,7 @@ import "../styles/global.css";
   }
 
   .works__description p {
-    margin-block: var(--size-small-l) var(--size-base);
+    margin-block: var(--clamp-small-base) var(--clamp-3-base);
   }
 
   .works__links {
@@ -394,10 +395,14 @@ import "../styles/global.css";
   }
 
   @media (max-width: 43.75em) {
-    .about__content,
-    .works__content {
+    .about__content {
       flex-direction: column;
       align-items: center;
+    }
+
+    .works__content {
+      flex-direction: column;
+      gap: var(--size-small-l);
     }
 
     .works__img {
@@ -406,6 +411,19 @@ import "../styles/global.css";
 
     .works__links {
       justify-content: center;
+    }
+  }
+
+  @media (max-width: 26.563em) {
+    .works__links {
+      justify-content: space-between;
+      gap: var(--size-x-small);
+    }
+  }
+
+  @media (max-width: 20em) {
+    .works__links a {
+      width: 100%;
     }
   }
 </style>
