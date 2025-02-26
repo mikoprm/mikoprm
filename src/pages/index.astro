@@ -2,6 +2,7 @@
 import miko from "../assets/miiko.webp";
 import photography from "../assets/photography-website.webp";
 import coffeeBrow from "../assets/coffeeBrow.webp";
+import devxyz from "../assets/devxyz-portfolio.webp";
 import { Image } from "astro:assets";
 import MainLayout from "../layouts/MainLayout.astro";
 import "../styles/global.css";
@@ -191,6 +192,24 @@ import "../styles/global.css";
       <div class="wrapper-contents works">
         <h2 id="works">Resent Projects</h2>
         <article class="works__content">
+          <Image src={devxyz} alt="Devxyz portfolio" class="works__img" />
+          <aside class="works__description">
+            <h3>Devxyz Portfolio</h3>
+            <p>
+              In this project i made a static responsive website with HTML CSS
+              JS & Vite Js.
+            </p>
+            <div class="works__links">
+              <a href="https://devxyz.vercel.app/" class="button button-primary"
+                >View Live Demo</a
+              >
+              <a href="https://github.com/Mikoprn/Devxyz" class="button"
+                >Source Code</a
+              >
+            </div>
+          </aside>
+        </article>
+        <article class="works__content">
           <Image
             src={coffeeBrow}
             alt="coffeeBrow website image"
@@ -213,7 +232,6 @@ import "../styles/global.css";
             </div>
           </aside>
         </article>
-
         <article class="works__content">
           <Image
             src={photography}
@@ -338,11 +356,17 @@ import "../styles/global.css";
     margin-bottom: var(--clamp-5-base);
   }
 
+  .works__content:hover .works__img,
+  .works__content:focus-visible .works__img {
+    box-shadow: var(--box-shadow);
+  }
+
   .works__img {
     width: clamp(17.5rem, 40vw, 31.25rem);
     aspect-ratio: 16 / 9;
     border: var(--border-dark);
     border-width: var(--size-xx-small);
+    transition: var(--transition);
   }
 
   .works__description p {
