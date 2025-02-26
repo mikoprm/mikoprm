@@ -1,4 +1,5 @@
 ---
+import devxyz from "../assets/devxyz-portfolio.webp";
 import accordion2 from "../assets/accordion2.webp";
 import accordion from "../assets/accordion.webp";
 import navbar from "../assets/navbar.webp";
@@ -44,6 +45,26 @@ import "../styles/global.css";
 
       <div class="tab__contents">
         <div data-tab-content id="landingPage" class="project__contents active">
+          <article class="project__content">
+            <Image src={devxyz} alt="Devxyz portfolio" class="project__img" />
+            <aside class="project__description">
+              <h3>Devxyz Portfolio</h3>
+              <p>
+                In this project i made a static responsive website with HTML CSS
+                JS & Vite Js.
+              </p>
+              <div class="project__links">
+                <a
+                  href="https://devxyz.vercel.app/"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a href="https://github.com/Mikoprn/Devxyz" class="button"
+                  >Source Code</a
+                >
+              </div>
+            </aside>
+          </article>
+
           <article class="project__content">
             <Image
               src={coffeeBrow}
@@ -275,11 +296,17 @@ import "../styles/global.css";
     margin-bottom: var(--clamp-5-base);
   }
 
+  .project__content:hover .project__img,
+  .project__content:focus-visible .project__img {
+    box-shadow: var(--box-shadow);
+  }
+
   .project__img {
     width: clamp(17.5rem, 40vw, 31.25rem);
     aspect-ratio: 16 / 9;
     border: var(--border-dark);
     border-width: var(--size-xx-small);
+    transition: var(--transition);
   }
 
   .project__description {
