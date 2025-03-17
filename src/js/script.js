@@ -30,10 +30,6 @@ document.addEventListener("click", (e) => {
   }
 });
 
-// Footer year
-const year = document.getElementById("year");
-year.innerText = new Date().getFullYear();
-
 // Project Tabs
 const tabs = document.querySelectorAll("[data-tab-target]");
 const tabContents = document.querySelectorAll("[data-tab-content]");
