@@ -1,16 +1,27 @@
 ---
-
 ---
 
 <footer>
   <div class="wrapper-primary footer">
-    <small>
-      &copy<span id="year"></span>
-    </small>
-    <small>| All right reserved | Made by :</small>
-    <a href="/" class="nav__logo" title="Back to Home"
-      >Miik<img src="/smile.svg" alt="logo img" /></a
-    >
+    <a href="https://github.com/mikoprn" target="_blank" class="link"
+      ><img
+        src="/github-white.svg"
+        alt="Github"
+        width="24"
+        height="24"
+        title="Github"
+        loading="lazy"
+        decoding="async"
+      />
+    </a>
+    <br />
+    <div class="footer__extra">
+      <small>2025 - Present</small>
+      <small>| All right reserved | Made by :</small>
+      <a href="/" class="nav__logo" title="Back to Home"
+        >Miik<img src="./public/smile.svg" alt="logo img" />
+      </a>
+    </div>
   </div>
 </footer>
 
@@ -18,18 +29,22 @@
   .footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: var(--size-x-small);
-    padding-block: var(--clamp-base-sm);
+    gap: var(--size-small-l);
+    padding-block: 0.75em;
     border-top: var(--border-dark);
   }
 
-  .footer p {
-    text-align: center;
+  .footer__extra {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--size-x-small);
   }
 
-  .nav__logo {
+  .footer .nav__logo {
     font-size: var(--clamp-base);
     font-weight: var(--fw-medium);
     display: flex;
@@ -38,8 +53,14 @@
     color: var(--link-color);
   }
 
-  .nav__logo img {
+  .footer .nav__logo img {
     width: var(--clamp-base);
     height: var(--clamp-base);
+  }
+
+  @media (max-width: 43.75em) {
+    .footer {
+      justify-content: center;
+    }
   }
 </style>
