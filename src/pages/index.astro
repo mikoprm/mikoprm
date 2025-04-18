@@ -1,8 +1,9 @@
 ---
-import miko from "../assets/miiko.webp";
+import miko from "../assets/miko.webp";
 import photography from "../assets/photography-website.webp";
 import coffeeBrow from "../assets/coffeeBrow.webp";
 import devxyz from "../assets/devxyz-portfolio.webp";
+import emilyui from "../assets/emilyui.webp";
 import { Image } from "astro:assets";
 import MainLayout from "../layouts/MainLayout.astro";
 import "../styles/global.css";
@@ -196,6 +197,30 @@ import "../styles/global.css";
     <div class="wrapper-contents works">
       <h2 id="works">Resent Projects</h2>
       <article class="works__content">
+        <Image src={emilyui} alt="EmilyUi portfolio" class="works__img" />
+        <aside class="works__description">
+          <h3>EmilyUi Portfolio</h3>
+          <p>
+            In this project i create a simple responsive portfolio website with HTML CSS JS
+            & Vite Js, with dark/light theme. The website will also
+            remember the theme so that the stored theme will be used when the
+            user refreshes or returns to the website after a few days.
+          </p>
+          <div class="works__links">
+            <a
+              href="https://emilyui.vercel.app/"
+              target="_blank"
+              class="button button-primary">View Live Demo</a
+            >
+            <a
+              href="https://github.com/mikoprn/EmilyUi"
+              target="_blank"
+              class="button">Source Code</a
+            >
+          </div>
+        </aside>
+      </article>
+      <article class="works__content">
         <Image src={devxyz} alt="Devxyz portfolio" class="works__img" />
         <aside class="works__description">
           <h3>Devxyz Portfolio</h3>
@@ -321,9 +346,6 @@ import "../styles/global.css";
 
   .about__img {
     width: clamp(10rem, 7.143vw + 8.571rem, 15rem);
-    filter: drop-shadow(var(--drop-shadow));
-    border-bottom: var(--border-dark);
-    border-width: var(--size-x-small);
     pointer-events: none;
     user-select: none;
   }
