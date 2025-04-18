@@ -1,4 +1,5 @@
 ---
+import emilyui from "../assets/emilyui.webp";
 import devxyz from "../assets/devxyz-portfolio.webp";
 import accordion2 from "../assets/accordion2.webp";
 import accordion from "../assets/accordion.webp";
@@ -25,11 +26,6 @@ import "../styles/global.css";
             >
           </li>
           <li>
-            <button data-tab-target="#html" class="tag-name"
-              >HTML CSS & JS</button
-            >
-          </li>
-          <li>
             <button data-tab-target="#js" class="tag-name">Javascript</button>
           </li>
           <li>
@@ -45,6 +41,32 @@ import "../styles/global.css";
 
       <div class="tab__contents">
         <div data-tab-content id="landingPage" class="project__contents active">
+          <article class="project__content">
+            <Image src={emilyui} alt="EmilyUi portfolio" class="project__img" />
+            <aside class="project__description">
+              <h3>EmilyUi Portfolio</h3>
+              <p>
+                In this project i create a simple responsive portfolio website
+                with HTML CSS JS & Vite Js, with dark/light theme. The website
+                will also remember the theme so that the stored theme will be
+                used when the user refreshes or returns to the website after a
+                few days.
+              </p>
+              <div class="project__links">
+                <a
+                  href="https://emilyui.vercel.app/"
+                  target="_blank"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a
+                  href="https://github.com/mikoprn/EmilyUi"
+                  target="_blank"
+                  class="button">Source Code</a
+                >
+              </div>
+            </aside>
+          </article>
+
           <article class="project__content">
             <Image src={devxyz} alt="Devxyz portfolio" class="project__img" />
             <aside class="project__description">
@@ -176,7 +198,7 @@ import "../styles/global.css";
             </aside>
           </article>
         </div>
-        <div data-tab-content id="html" class="project__contents">
+        <div data-tab-content id="js" class="project__contents">
           <article class="project__content">
             <Image
               src={navbar}
@@ -247,9 +269,6 @@ import "../styles/global.css";
               </div>
             </aside>
           </article>
-        </div>
-        <div data-tab-content id="js" class="project__contents">
-          <h3>Coming Soon...</h3>
         </div>
         <div data-tab-content id="design" class="project__contents">
           <h3>Coming Soon...</h3>
@@ -331,13 +350,12 @@ import "../styles/global.css";
   [data-tab-content] {
     display: none;
     opacity: 0;
-    animation: var(--fadeOut-animation);
   }
 
   .active[data-tab-content] {
     display: block;
     opacity: 1;
-    animation: var(--fadeIn-animation);
+    animation: var(--transitionPrimary);
   }
 
   @media (max-width: 43.75em) {
