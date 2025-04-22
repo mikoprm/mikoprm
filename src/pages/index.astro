@@ -13,7 +13,7 @@ import "../styles/global.css";
   <section aria-labelledby="home">
     <div class="wrapper-contents home">
       <div class="home__heading">
-        <h1 id="home">Hi there, I'm <span>Miko.</span></h1>
+        <h1 id="home">Hi there, I'm <span class="text-gradient">Miko.</span></h1>
         <small>Welcome to my portfolio</small>
       </div>
       <p>
@@ -64,7 +64,7 @@ import "../styles/global.css";
   </section>
   <section aria-labelledby="skills">
     <div class="wrapper-contents skills">
-      <h2 id="skills" class="h4 text-center">
+      <h2 id="skills" class="h3 text-center">
         The skills, tools and technology I use :
       </h2>
       <br />
@@ -295,7 +295,7 @@ import "../styles/global.css";
         </aside>
       </article>
       <a href="/project" class="button button-accent works__projects-link"
-        ><h4>See All Projects &#10148;</h4>
+        >See All Projects &#10148;
       </a>
     </div>
   </section>
@@ -312,10 +312,6 @@ import "../styles/global.css";
   h1 span {
     font-size: var(--clamp-4-base);
     font-weight: var(--fw-bold);
-    background-image: var(--gradient-primary);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
   .home__heading small {
@@ -379,7 +375,7 @@ import "../styles/global.css";
   .skills__images {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     gap: var(--clamp-base) var(--clamp-3-base);
   }
@@ -387,12 +383,14 @@ import "../styles/global.css";
   .skills li img {
     width: 100%;
     height: clamp(var(--size-3-base), 4vw, var(--size-4-base));
+    height:  var(--size-4-base);
     border-radius: 0;
   }
 
   .works__content {
     display: flex;
     justify-content: space-between;
+    align-items: start;
     gap: var(--clamp-5-base);
   }
 
@@ -426,6 +424,7 @@ import "../styles/global.css";
 
   .works__projects-link {
     display: inline-block;
+    font-size: var(--text-size);
   }
 
   @media (max-width: 43.75em) {
@@ -436,7 +435,7 @@ import "../styles/global.css";
 
     .works__content {
       flex-direction: column;
-      gap: var(--size-small-l);
+      gap: var(--size-2-base);
     }
 
     .works__img {
