@@ -120,6 +120,7 @@
     --size-5-base: 3.125rem;
     --size-6-base: 3.75rem;
     --size-7-base: 4.375rem;
+    --text-size: 1.125rem;
 
     /*Clamp*/
     --clamp-x-small: clamp(0.188rem, 1vw, 0.313rem);
@@ -130,7 +131,7 @@
     --clamp-base-sm: clamp(0.875rem, 1vw, 0.938rem);
     --clamp-base: clamp(0.938rem, 2vw, 1rem);
     --clamp-1-xl: clamp(1rem, 2vw, 1.125rem);
-    --clamp-2-base: clamp(1rem, 2vw, 1.25rem);
+    --clamp-2-base: clamp(1.125rem, 2vw, 1.25rem);
     --clamp-2-xl: clamp(1.25rem, 2.4vw, 1.5rem);
     --clamp-3-base: clamp(1.375rem, 3vw, 1.875rem);
     --clamp-3-xl: clamp(1.5rem, 3.2vw, 2rem);
@@ -160,7 +161,7 @@
     outline-offset: var(--size-small-base);
     text-decoration: none;
     list-style: none;
-    line-height: 1.5;
+    line-height: 1.6;
     font-family: 'inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
         'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
@@ -175,7 +176,7 @@ html {
 h1,
 .h1 {
     font-size: var(--clamp-4-base);
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-medium);
     line-height: 1.1;
     text-align: center;
 }
@@ -183,7 +184,7 @@ h1,
 h2,
 .h2 {
     font-size: var(--clamp-3-xl);
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-medium);
     line-height: 1.2;
     text-align: center;
 }
@@ -191,7 +192,7 @@ h2,
 h3,
 .h3 {
     font-size: var(--clamp-2-xl);
-    font-weight: var(--fw-medium);
+    font-weight: var(--fw-regular);
     line-height: 1.2;
 }
 
@@ -204,14 +205,14 @@ h4,
 
 p,
 .p {
-    font-size: var(--clamp-base);
+    font-size: var(--text-size);
     font-weight: var(--fw-light);
     color: var(--light-accent);
 }
 
 small,
 .small {
-    font-size: var(--clamp-base-sm);
+    font-size: var(--size-base);
     font-weight: var(--fw-light);
     color: var(--light-accent);
 }
@@ -230,7 +231,7 @@ video {
 a,
 button,
 .button {
-    font-size: var(--clamp-base);
+    font-size: var(--text-size);
     font-weight: var(--fw-regular);
     line-height: normal;
     color: inherit;
@@ -247,6 +248,7 @@ a:focus-visible {
 
 button,
 .button {
+    font-size: var(--size-base);
     color: var(--light-base);
     background-color: var(--grey-color);
     border: none;
@@ -281,8 +283,15 @@ button:focus-visible,
     text-align: center;
 }
 
+.text-gradient {
+    background-image: var(--gradient-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .tag-name {
-    font-size: var(--clamp-base-sm);
+    font-size: var(--size-base);
     font-weight: var(--fw-medium);
     color: var(--accent-color);
     background-color: var(--t-accent-color);
