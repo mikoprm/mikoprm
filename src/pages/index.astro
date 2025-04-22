@@ -1,9 +1,9 @@
 ---
 import miko from "../assets/miko.webp";
-import photography from "../assets/photography-website.webp";
-import coffeeBrow from "../assets/coffeeBrow.webp";
-import devxyz from "../assets/devxyz-portfolio.webp";
 import emilyui from "../assets/emilyui.webp";
+import devxyz from "../assets/devxyz-portfolio.webp";
+import photography from "../assets/photography-website.webp";
+import wireframe from "../assets/wireframe.webp";
 import { Image } from "astro:assets";
 import MainLayout from "../layouts/MainLayout.astro";
 import "../styles/global.css";
@@ -13,7 +13,9 @@ import "../styles/global.css";
   <section aria-labelledby="home">
     <div class="wrapper-contents home">
       <div class="home__heading">
-        <h1 id="home">Hi there, I'm <span class="text-gradient">Miko.</span></h1>
+        <h1 id="home">
+          Hi there, I'm <span class="text-gradient">Miko.</span>
+        </h1>
         <small>Welcome to my portfolio</small>
       </div>
       <p>
@@ -201,8 +203,8 @@ import "../styles/global.css";
         <aside class="works__description">
           <h3>EmilyUi Portfolio</h3>
           <p>
-            In this project i create a simple responsive portfolio website with HTML CSS JS
-            & Vite Js, with dark/light theme. The website will also
+            In this project i create a simple responsive portfolio website with
+            HTML CSS JS & Vite Js, with dark/light theme. The website will also
             remember the theme so that the stored theme will be used when the
             user refreshes or returns to the website after a few days.
           </p>
@@ -244,32 +246,6 @@ import "../styles/global.css";
       </article>
       <article class="works__content">
         <Image
-          src={coffeeBrow}
-          alt="coffeeBrow website image"
-          class="works__img"
-        />
-        <aside class="works__description">
-          <h3>Coffee Shop Responsive Website</h3>
-          <p>
-            In this project i made a static responsive landing page coffe Shop
-            website with HTML CSS JS.
-          </p>
-          <div class="works__links">
-            <a
-              href="https://mikoprn.github.io/CoffeeBrow/"
-              target="_blank"
-              class="button button-primary">View Live Demo</a
-            >
-            <a
-              href="https://github.com/Mikoprn/CoffeeBrow"
-              target="_blank"
-              class="button">Source Code</a
-            >
-          </div>
-        </aside>
-      </article>
-      <article class="works__content">
-        <Image
           src={photography}
           alt="photography website image"
           class="works__img"
@@ -288,6 +264,34 @@ import "../styles/global.css";
             >
             <a
               href="https://github.com/Mikoprn/Photography--website"
+              target="_blank"
+              class="button">Source Code</a
+            >
+          </div>
+        </aside>
+      </article>
+      <article class="works__content">
+        <Image
+          src={wireframe}
+          alt="Wireframe template website"
+          class="works__img"
+        />
+        <aside class="works__description">
+          <h3>Wireframe template website</h3>
+          <p>
+            Wireframe template website HTML CSS JS, with dark / light theme
+            toggle. The website will also remember the theme so that the stored
+            theme will be used when the user refreshes or returns to the website
+            after a few days.
+          </p>
+          <div class="project__links">
+            <a
+              href="https://wireframe-miko.vercel.app/"
+              target="_blank"
+              class="button button-primary">View Live Demo</a
+            >
+            <a
+              href="https://github.com/mikoprn/wireframe"
               target="_blank"
               class="button">Source Code</a
             >
@@ -341,7 +345,7 @@ import "../styles/global.css";
   }
 
   .about__img {
-    width: clamp(12.5rem, 10.5978rem + 10.8696vw, 18.75rem);;
+    width: clamp(12.5rem, 10.5978rem + 10.8696vw, 18.75rem);
     pointer-events: none;
     user-select: none;
   }
@@ -383,7 +387,7 @@ import "../styles/global.css";
   .skills li img {
     width: 100%;
     height: clamp(var(--size-3-base), 4vw, var(--size-4-base));
-    height:  var(--size-4-base);
+    height: var(--size-4-base);
     border-radius: 0;
   }
 
