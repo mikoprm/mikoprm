@@ -53,7 +53,7 @@ import "../styles/global.css";
               loading="lazy"
               decoding="async"
             />
-            <p>Email :</p>
+            <p>email :</p>
             <a href="mailto:miiko.prn@gmail.com" class="link"
               >miiko.prn@gmail.com</a
             >
@@ -188,6 +188,29 @@ import "../styles/global.css";
           />
         </li>
       </ul>
+    </div>
+  </section>
+  <section aria-labelledby="services">
+    <div class="wrapper-contents services">
+      <h2 id="services">The Services I Provide</h2>
+      <article class="services__wrapper">
+        <section aria-labelledby="frontEnd" class="services__content">
+          <h3 id="frontEnd" class="text-center">Frontend Development</h3>
+          <p>
+            Already have the design? I can create static responsive websites
+            such as landing pages, portfolio, company sites, and custom websites
+            with minimal javascript.
+          </p>
+        </section>
+        <section aria-labelledby="redesign" class="services__content">
+          <h3 id="redesign" class="text-center">Redesign Website</h3>
+          <p>
+            Need redesign or costum your static old website for better user
+            interfaces and user experience based on your content, I can provide
+            that service for you.
+          </p>
+        </section>
+      </article>
     </div>
   </section>
   <section aria-labelledby="works">
@@ -340,6 +363,7 @@ import "../styles/global.css";
   }
 
   .about__img {
+    flex: 1;
     width: clamp(12.5rem, 10.5978rem + 10.8696vw, 18.75rem);
     pointer-events: none;
     user-select: none;
@@ -382,6 +406,29 @@ import "../styles/global.css";
     border-radius: 0;
   }
 
+  .services__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--clamp-5-base);
+  }
+
+  .services__content {
+    width: clamp(17.5rem, 45vw, 34.375rem);
+    border: var(--border-dark);
+    padding: 1.5em;
+    border-radius: var(--size-x-small);
+    transition: var(--transition);
+  }
+
+  .services__content:is(:hover, :focus-visible) {
+    background-color: var(--grey-color);
+  }
+
+  .services__content p {
+    margin-top: var(--size-small-l);
+  }
+
   .works__projects-link {
     display: inline-block;
     font-size: var(--text-size);
@@ -389,9 +436,15 @@ import "../styles/global.css";
 
   /* 700px */
   @media (max-width: 43.75em) {
-    .about__content {
+    .about__content,
+    .services__wrapper {
       flex-direction: column;
       align-items: center;
+    }
+
+    .services__content {
+      width: 100%;
+      padding: 1em;
     }
   }
 </style>
