@@ -394,6 +394,10 @@ main,
 
 /* 700px  */
 @media (max-width: 43.75em) {
+    .article__description h3 {
+        text-align: center;
+    }
+    
     .article__content {
         flex-direction: column;
         gap: var(--size-2-base);
