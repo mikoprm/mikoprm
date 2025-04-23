@@ -84,8 +84,8 @@
     --light-accent: #efeff3;
     --dark-base: #000000;
     --dark-mode: #080808;
-    --dark-accent: #303030;
-    --grey-color: #202020;
+    --dark-accent: #202020;
+    --grey-color: #303030;
     --blue-color: #440bd4;
     --purple-color: #6200d2;
     --link-color: #00aaff;
@@ -244,10 +244,10 @@ button,
     transition: var(--transition);
 }
 
-a:hover,
-a:focus-visible {
-    text-decoration: underline;
-    text-underline-offset: var(--size-x-small);
+a:is(:hover, :focus-visible),
+button:is(:hover, :focus-visible),
+.button:is(:hover, :focus-visible),
+.tag-name:is(:hover, :focus-visible) {
     opacity: var(--opacity);
 }
 
@@ -260,16 +260,6 @@ button,
     padding: .75em 1.25em;
     border-radius: var(--clamp-x-small);
     cursor: pointer;
-}
-
-button:hover,
-button:focus-visible,
-.button:hover,
-.button:focus-visible,
-.tag-name:hover,
-.tag-name:focus-visible {
-    opacity: var(--opacity);
-    text-decoration: none;
 }
 
 .button-primary {
