@@ -1,4 +1,5 @@
 ---
+import typescale from "../assets/typescale.webp";
 import { Image } from "astro:assets";
 import MainLayout from "../layouts/MainLayout.astro";
 import "../styles/global.css";
@@ -6,23 +7,29 @@ import "../styles/global.css";
 
 <MainLayout title="Web design">
   <section aria-labelledby="design">
-    <div class="wrapper-contents design">
-      <h2 class="h1" id="design">Coming Soon...</h2>
+    <div class="wrapper-contents article__contents-wrapper">
+      <h2 class="h1" id="design">Inspiration for designing a website</h2>
+      <article class="article__content">
+        <Image
+          src={typescale}
+          alt="Wireframe template website"
+          class="article__img"
+        />
+        <aside class="article__description">
+          <h3>Typescale - font size & typography</h3>
+          <p>
+            Typescale - Create stunning typography, generate CSS, and find
+            inspiration.
+          </p>
+          <div class="article__links">
+            <a
+              href="https://typescale.com/"
+              target="_blank"
+              class="button button-primary">View Source</a
+            >
+          </div>
+        </aside>
+      </article>
     </div>
   </section>
 </MainLayout>
-
-<style>
-  .design {
-    min-height: calc(91dvh - var(--clamp-5-xl));
-    display: grid;
-    place-content: center;
-    place-items: center;
-  }
-
-  @media (max-width: 23.438em) {
-    .design {
-      min-height: calc(81dvh - var(--clamp-5-xl));
-    }
-  }
-</style>
