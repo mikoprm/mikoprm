@@ -3,7 +3,7 @@
 
 <header class="header">
   <nav class="wrapper-primary nav">
-    <a href="/" class="nav__logo" title="Back to Home"
+    <a href="/" class="logo" title="Back to Home"
       >Miik<img src="/smile.svg" alt="logo img" />
     </a>
     <menu class="nav__menu">
@@ -54,36 +54,11 @@
     border-bottom: var(--border-dark);
   }
 
-  .nav__logo {
-    font-size: var(--size-2-base);
-    font-weight: var(--fw-medium);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--link-color);
-  }
-
-  .nav__logo img {
-    width: var(--clamp-2-base);
-    height: var(--clamp-2-base);
-  }
-
-  .nav__logo:hover,
-  .nav__logo:focus-visible {
-    text-decoration: none;
-    opacity: var(--opacity);
-  }
-
   .nav__menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: clamp(0rem, 3vw, var(--size-3-base));
-  }
-
-  .nav__link {
-    color: var(--light-accent);
-    transition: var(--transition);
   }
 
   .nav__link:hover,
@@ -98,7 +73,7 @@
     cursor: pointer;
   }
 
-  /* tablet 600px  */
+  /* 600px */
   @media (max-width: 37.5em) {
     .nav__mobile-btn {
       display: block;
@@ -115,6 +90,7 @@
       flex-direction: column;
       justify-content: start;
       min-height: 100dvh;
+      padding-top: var(--size-5-base);
       transition: var(--transition);
       transform: translateX(100%);
       background-image: var(--gradient-primary);
