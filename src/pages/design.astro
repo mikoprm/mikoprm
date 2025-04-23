@@ -1,4 +1,5 @@
 ---
+import clamp from "../assets/clamp-generator.webp";
 import typescale from "../assets/typescale.webp";
 import { Image } from "astro:assets";
 import MainLayout from "../layouts/MainLayout.astro";
@@ -10,11 +11,7 @@ import "../styles/global.css";
     <div class="wrapper-contents article__contents-wrapper">
       <h2 class="h1" id="design">Inspiration for designing a website</h2>
       <article class="article__content">
-        <Image
-          src={typescale}
-          alt="Wireframe template website"
-          class="article__img"
-        />
+        <Image src={typescale} alt="Typescale" class="article__img" />
         <aside class="article__description">
           <h3>Typescale - font size & typography</h3>
           <p>
@@ -24,6 +21,27 @@ import "../styles/global.css";
           <div class="article__links">
             <a
               href="https://typescale.com/"
+              target="_blank"
+              class="button button-primary">View Source</a
+            >
+          </div>
+        </aside>
+      </article>
+      <article class="article__content">
+        <Image
+          src={clamp}
+          alt="Font size clamp generator"
+          class="article__img"
+        />
+        <aside class="article__description">
+          <h3>Font-size Clamp Generator</h3>
+          <p>
+            Generate linearly scale font-size with clamp(), for responsive
+            typography and sizing.
+          </p>
+          <div class="article__links">
+            <a
+              href="https://clamp.font-size.app/"
               target="_blank"
               class="button button-primary">View Source</a
             >
