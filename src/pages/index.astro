@@ -12,12 +12,10 @@ import "../styles/global.css";
 <MainLayout title="Home page">
   <section aria-labelledby="home">
     <div class="wrapper-contents home">
-      <div class="home__heading">
-        <h1 id="home">
-          Hi there, I'm <span class="text-gradient">Miko.</span>
-        </h1>
-        <small>Welcome to my portfolio</small>
-      </div>
+      <h1 id="home">
+        Hi there, I'm <span class="text-gradient">Miko.</span>
+      </h1>
+      <small>Welcome to my portfolio</small>
       <p>
         I am self-taught developer based in Indonesia. Passionate about building
         accessible user, scalable web applications, friendly responsive website,
@@ -315,7 +313,7 @@ import "../styles/global.css";
     font-weight: var(--fw-bold);
   }
 
-  .home__heading small {
+  small {
     display: block;
     width: fit-content;
     margin-inline: auto;
@@ -389,6 +387,7 @@ import "../styles/global.css";
     font-size: var(--text-size);
   }
 
+  /* 700px */
   @media (max-width: 43.75em) {
     .about__content {
       flex-direction: column;
