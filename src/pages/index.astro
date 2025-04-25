@@ -10,7 +10,449 @@ import "../styles/global.css";
 ---
 
 <MainLayout title="Home page">
+  <section aria-labelledby="home">---
+import miko from "../assets/miko.webp";
+import emilyui from "../assets/emilyui.webp";
+import devxyz from "../assets/devxyz-portfolio.webp";
+import photography from "../assets/photography-website.webp";
+import wireframe from "../assets/wireframe.webp";
+import { Image } from "astro:assets";
+import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/global.css";
+---
+
+<MainLayout title="Miko - Web Dev Portfolio and Projects">
   <section aria-labelledby="home">
+    <div class="wrapper-contents home">
+      <h1 id="home">
+        Hi there, I'm <span class="text-gradient">Miko.</span>
+      </h1>
+      <small>Welcome to my portfolio</small>
+      <p>
+        I am self-taught developer based in Indonesia. Passionate about building
+        accessible user, scalable web applications, friendly responsive website,
+        curious about solving problems and creating innovative solutions.
+        Looking for exciting opportunities, likes to focus on accessibility when
+        developing.
+      </p>
+    </div>
+  </section>
+  <section aria-labelledby="about">
+    <div class="wrapper-contents about">
+      <h2 id="about">About Me</h2>
+      <div class="about__content">
+        <Image src={miko} alt="Miko profile picture" class="about__img" />
+        <article>
+          <p>
+            I started my developer journey as a front-end web developer,
+            starting with HTML, CSS and Javascript. Since then, I have worked on
+            various websites and apps. Currently, I'm exploring front-end
+            framework and a bit of web design to improve skill. My goal is to
+            build solutions that offer both exceptional performance and a
+            delightful user experience.
+          </p>
+          <p>
+            My inbox always open, whether you have question or just send hi,
+            i'll try my best to get back to you. Feel free to reach out!
+          </p>
+          <div class="contact__email">
+            <img
+              src="/gmail.svg"
+              alt="Gmail"
+              width="18"
+              height="18"
+              title="Gmail"
+              loading="lazy"
+              decoding="async"
+            />
+            <p>Email :</p>
+            <a href="mailto:miko.devxyz@gmail.com" class="link"
+              >miko.devxyz@gmail.com</a
+            >
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section aria-labelledby="skills">
+    <div class="wrapper-contents skills">
+      <h3 id="skills" class="text-center">The skills and tech stack I use :</h3>
+      <ul aria-labelledby="skills" class="skills__images">
+        <li>
+          <img
+            src="/html5.svg"
+            alt="HTML"
+            width="128"
+            height="128"
+            title="HTML5"
+            loading="lazy"
+            decoding="async"
+          />
+        </li>
+        <li>
+          <img
+            src="/css.svg"
+            alt="CSS"
+            width="128"
+            height="128"
+            title="CSS"
+            loading="lazy"
+            decoding="async"
+          />
+        </li>
+        <li>
+          <img
+            src="/sass.svg"
+            alt="SCSS"
+            width="128"
+            height="128"
+            title="SCSS"
+            loading="lazy"
+            decoding="async"
+          />
+        </li>
+        <li>
+          <img
+            src="/javascript.svg"
+            alt="Javascript"
+            width="128"
+            height="128"
+            title="Javascsript"
+            loading="lazy"
+            decoding="async"
+          />
+        </li>
+        <li>
+          <img
+            src="/astro-icon.svg"
+            alt="Astro JS"
+            width="30"
+            height="70"
+            title="Astro JS"
+            loading="lazy"
+            decoding="async"
+          />
+        </li>
+        <li>
+          <img
+            src="/react.svg"
+            alt="React JS"
+            width="128"
+            height="111"
+            title="React JS"
+            loading="lazy"
+            decoding="async"
+          />
+        </li>
+        <li>
+          <img
+            src="/vite.svg"
+            alt="Vite JS"
+            width="110"
+            height="104"
+            title="Vite JS"
+            loading="lazy"
+            decoding="async"
+          />
+        </li>
+        <li>
+          <img
+            src="/nodejs.svg"
+            alt="NodeJS"
+            width="71"
+            height="80"
+            title="NodeJS"
+            loading="lazy"
+            decoding="async"
+          />
+        </li>
+        <li>
+          <img
+            src="/github-white.svg"
+            alt="Github"
+            width="96"
+            height="96"
+            title="Github"
+            loading="lazy"
+            decoding="async"
+          />
+        </li>
+        <li>
+          <img
+            src="/vscode.svg"
+            alt="Visual Studio Code"
+            width="128"
+            height="128"
+            title="Visual Studio Code"
+            loading="lazy"
+            decoding="async"
+          />
+        </li>
+        <li>
+          <img
+            src="/figma.svg"
+            alt="Figma"
+            width="38"
+            height="57"
+            title="Figma"
+            loading="lazy"
+            decoding="async"
+          />
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section aria-labelledby="services">
+    <div class="wrapper-contents services">
+      <h2 id="services">The Services I Provide</h2>
+      <article class="services__wrapper">
+        <section aria-labelledby="frontEnd" class="services__content">
+          <h3 id="frontEnd" class="text-center">Frontend Development</h3>
+          <p>
+            Already have the design? I can create static responsive websites
+            such as landing pages, portfolio, company sites, and custom websites
+            with minimal javascript.
+          </p>
+        </section>
+        <section aria-labelledby="redesign" class="services__content">
+          <h3 id="redesign" class="text-center">Redesign Website</h3>
+          <p>
+            Need redesign or costum your static old website for better user
+            interfaces and user experience based on your content, I can provide
+            that service for you.
+          </p>
+        </section>
+      </article>
+    </div>
+  </section>
+  <section aria-labelledby="works">
+    <div class="wrapper-contents works">
+      <h2 id="works">Resent Projects</h2>
+      <article class="article__content">
+        <Image src={emilyui} alt="EmilyUi portfolio" class="article__img" />
+        <aside class="article__description">
+          <h3>EmilyUi Portfolio</h3>
+          <p>
+            In this project i create a simple responsive portfolio website with
+            HTML CSS JS & Vite Js, with dark/light theme. The website will also
+            remember the theme so that the stored theme will be used when the
+            user refreshes or returns to the website after a few days.
+          </p>
+          <div class="article__links">
+            <a
+              href="https://emilyui.vercel.app/"
+              target="_blank"
+              class="button button-primary">View Live Demo</a
+            >
+            <a
+              href="https://github.com/mikoprn/EmilyUi"
+              target="_blank"
+              class="button">Source Code</a
+            >
+          </div>
+        </aside>
+      </article>
+      <article class="article__content">
+        <Image src={devxyz} alt="Devxyz portfolio" class="article__img" />
+        <aside class="article__description">
+          <h3>Devxyz Portfolio</h3>
+          <p>
+            In this project i made a static responsive website with HTML CSS JS
+            & Vite Js.
+          </p>
+          <div class="article__links">
+            <a
+              href="https://devxyz.vercel.app/"
+              target="_blank"
+              class="button button-primary">View Live Demo</a
+            >
+            <a
+              href="https://github.com/Mikoprn/Devxyz"
+              target="_blank"
+              class="button">Source Code</a
+            >
+          </div>
+        </aside>
+      </article>
+      <article class="article__content">
+        <Image
+          src={photography}
+          alt="photography website image"
+          class="article__img"
+        />
+        <aside class="article__description">
+          <h3>Photography Responsive Website</h3>
+          <p>
+            In this project i made a static responsive landing page photography
+            website with HTML CSS JS.
+          </p>
+          <div class="article__links">
+            <a
+              href="https://photography--website.pages.dev/"
+              target="_blank"
+              class="button button-primary">View Live Demo</a
+            >
+            <a
+              href="https://github.com/Mikoprn/Photography--website"
+              target="_blank"
+              class="button">Source Code</a
+            >
+          </div>
+        </aside>
+      </article>
+      <article class="article__content">
+        <Image
+          src={wireframe}
+          alt="Wireframe template website"
+          class="article__img"
+        />
+        <aside class="article__description">
+          <h3>Wireframe template website</h3>
+          <p>
+            Wireframe template website HTML CSS JS, with dark / light theme
+            toggle. The website will also remember the theme so that the stored
+            theme will be used when the user refreshes or returns to the website
+            after a few days.
+          </p>
+          <div class="article__links">
+            <a
+              href="https://wireframe-miko.vercel.app/"
+              target="_blank"
+              class="button button-primary">View Live Demo</a
+            >
+            <a
+              href="https://github.com/mikoprn/wireframe"
+              target="_blank"
+              class="button">Source Code</a
+            >
+          </div>
+        </aside>
+      </article>
+      <a href="/project" class="button button-accent works__projects-link"
+        >See All Projects &#10148;
+      </a>
+    </div>
+  </section>
+</MainLayout>
+
+<style>
+  .home {
+    max-width: 56.25rem;
+    margin-inline: auto;
+    display: grid;
+    gap: var(--clamp-2-base);
+  }
+
+  h1 span {
+    font-size: var(--clamp-4-base);
+    font-weight: var(--fw-bold);
+  }
+
+  small {
+    display: block;
+    width: fit-content;
+    margin-inline: auto;
+    padding: 0.25em 1.5em;
+    border-radius: var(--size-3-base);
+    border: var(--border-dark);
+  }
+
+  h2 {
+    width: fit-content;
+    text-align: left;
+    margin-bottom: var(--clamp-4-xl);
+    border-bottom: var(--border-light);
+    border-width: var(--size-xx-small);
+    border-color: var(--link-color);
+    border-image: var(--gradient-primary) 1 0%;
+  }
+
+  .about__content {
+    display: flex;
+    align-items: start;
+    gap: var(--clamp-5-base);
+  }
+
+  .about__img {
+    width: clamp(12.5rem, 10.5978rem + 10.8696vw, 18.75rem);
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .about__content article {
+    max-width: 43.75rem;
+    display: grid;
+    gap: var(--clamp-2-base);
+  }
+
+  .about__content article h3 {
+    margin-top: var(--size-2-base);
+  }
+
+  .skills {
+    display: grid;
+    place-items: center;
+    gap: var(--clamp-3-base);
+  }
+
+  .skills__images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--clamp-base) var(--clamp-3-base);
+  }
+
+  .skills li img {
+    width: 100%;
+    height: clamp(var(--size-3-base), 4vw, var(--size-4-base));
+    height: var(--size-4-base);
+    border-radius: 0;
+  }
+
+  .services__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--clamp-5-base);
+  }
+
+  .services__content {
+    width: clamp(17.5rem, 45vw, 34.375rem);
+    border: var(--border-dark);
+    padding: 1.5em;
+    border-radius: var(--size-x-small);
+    transition: var(--transition);
+  }
+
+  .services__content:is(:hover, :focus-visible) {
+    background-color: var(--dark-accent);
+  }
+
+  .services__content p {
+    margin-top: var(--size-small-l);
+  }
+
+  .works__projects-link {
+    display: inline-block;
+    font-size: var(--text-size);
+  }
+
+  /* 700px */
+  @media (max-width: 43.75em) {
+    .about__content,
+    .services__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .services__content {
+      width: 100%;
+      padding: 1em;
+    }
+  }
+</style>
+
     <div class="wrapper-contents home">
       <h1 id="home">
         Hi there, I'm <span class="text-gradient">Miko.</span>
