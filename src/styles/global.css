@@ -392,6 +392,12 @@ main,
     gap: var(--size-base);
 }
 
+.contact__email {
+    display: flex;
+    align-items: center;
+    gap: var(--size-x-small);
+}
+
 /* 700px  */
 @media (max-width: 43.75em) {
     .article__description h3 {
