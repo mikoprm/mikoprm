@@ -1,5 +1,6 @@
 ---
-import wireframe from "../assets/wireframe.webp";
+import michelle from "../assets/michelle.webp";
+import wireframe1 from "../assets/wireframe-1.webp";
 import emilyui from "../assets/emilyui.webp";
 import devxyz from "../assets/devxyz-portfolio.webp";
 import accordion2 from "../assets/accordion2.webp";
@@ -36,6 +37,35 @@ import "../styles/global.css";
       </section>
       <div class="tab__contents">
         <div data-tab-content id="landingPage" class="active">
+          <article class="article__content">
+            <Image
+              src={michelle}
+              alt="michelle website image"
+              class="article__img"
+            />
+            <aside class="article__description">
+              <h3>Michelle Young Portfolio</h3>
+              <p>
+                In this project i create a simple responsive portfolio website,
+                with dark/light theme with Astro Js, a modern web framework,
+                primarily focused on building fast and efficient content-driven
+                websites.
+              </p>
+              <div class="article__links">
+                <a
+                  href="https://michelle-young.vercel.app/"
+                  target="_blank"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a
+                  href="https://github.com/mikoprn/michelle-young"
+                  target="_blank"
+                  class="button">Source Code</a
+                >
+              </div>
+            </aside>
+          </article>
+
           <article class="article__content">
             <Image src={emilyui} alt="EmilyUi portfolio" class="article__img" />
             <aside class="article__description">
@@ -268,8 +298,8 @@ import "../styles/global.css";
         <div data-tab-content id="others">
           <article class="article__content">
             <Image
-              src={wireframe}
-              alt="Wireframe template website"
+              src={wireframe1}
+              alt="Wireframe 1 template website"
               class="article__img"
             />
             <aside class="article__description">
@@ -282,12 +312,12 @@ import "../styles/global.css";
               </p>
               <div class="article__links">
                 <a
-                  href="https://wireframe-miko.vercel.app/"
+                  href="https://wireframe-1.vercel.app/"
                   target="_blank"
                   class="button button-primary">View Live Demo</a
                 >
                 <a
-                  href="https://github.com/mikoprn/wireframe"
+                  href="https://github.com/mikoprn/wireframe-1"
                   target="_blank"
                   class="button">Source Code</a
                 >
@@ -306,7 +336,7 @@ import "../styles/global.css";
     border-bottom: var(--border-light);
     border-width: var(--size-xx-small);
     border-color: var(--link-color);
-    border-image: var(--gradient-primary) 1 0%;
+    border-image: var(--gradient) 1 0%;
     margin-bottom: var(--clamp-base);
   }
 
@@ -331,6 +361,6 @@ import "../styles/global.css";
   .active[data-tab-content] {
     display: block;
     opacity: 1;
-    animation: var(--transitionPrimary);
+    animation: var(--animationPrimary);
   }
 </style>
