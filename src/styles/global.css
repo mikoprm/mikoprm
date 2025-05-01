@@ -275,6 +275,8 @@ button,
 .button {
     font-size: var(--fz-large);
     line-height: normal;
+    width: fit-content;
+    text-align: center;
     color: inherit;
     transition: var(--transition);
     cursor: pointer;
@@ -291,7 +293,6 @@ button,
 .button {
     font-size: var(--size-base);
     font-weight: var(--fw-medium);
-    width: fit-content;
     color: var(--light-base);
     background-color: var(--dark-accent);
     border: none;
@@ -474,6 +475,11 @@ main,
 
 /* 320px */
 @media (max-width: 20em) {
+
+    h2 {
+        margin-inline: auto;
+    }
+
     .article__links a {
         width: 100%;
     }
