@@ -22,6 +22,14 @@
         loading="lazy"
         decoding="async"
       />
+      <img
+        src="/close.svg"
+        alt="Close button"
+        width="28px"
+        height="26px"
+        loading="lazy"
+        decoding="async"
+      />
     </div>
   </nav>
 </header>
@@ -50,7 +58,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: var(--clamp-5-xl);
+    height: var(--clamp-navbar);
     border-bottom: var(--border-dark);
   }
 
@@ -76,15 +84,27 @@
   @media (max-width: 37.5em) {
     .nav__mobile-btn {
       display: block;
+      background-image: var(--gradient);
       padding: var(--size-xx-small);
       border-radius: var(--size-xx-small);
-      background-image: var(--gradient-primary);
+      width: var(--size-3-base);
+      height: var(--size-3-base);
+      display: grid;
+      place-items: center;
+    }
+
+    .nav__mobile-btn img:first-child {
+      display: block;
+    }
+
+    .nav__mobile-btn img:last-child {
+      display: none;
     }
 
     .nav__menu {
       position: fixed;
       width: 80%;
-      top: var(--clamp-5-xl);
+      top: var(--clamp-navbar);
       right: 0;
       flex-direction: column;
       justify-content: start;
@@ -92,12 +112,20 @@
       padding-top: var(--size-5-base);
       transition: var(--transition);
       transform: translateX(100%);
-      background-image: var(--gradient-primary);
+      background-image: var(--gradient);
       z-index: -1;
     }
 
     .nav__menu.active {
       transform: translateX(0%);
+    }
+
+    .nav__menu.active ~ .nav__mobile-btn img:first-child {
+      display: none;
+    }
+
+    .nav__menu.active ~ .nav__mobile-btn img:last-child {
+      display: block;
     }
 
     .nav__menu li {
@@ -109,6 +137,10 @@
       font-weight: var(--fw-medium);
       padding-block: 1em;
       text-align: center;
+    }
+
+    .nav__link:is(:hover, :focus-visible) {
+      color: inherit;
     }
   }
 </style>
