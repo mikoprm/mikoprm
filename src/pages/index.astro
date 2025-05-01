@@ -1,15 +1,15 @@
 ---
 import miko from "../assets/miko.webp";
+import michelle from "../assets/michelle.webp";
 import emilyui from "../assets/emilyui.webp";
 import devxyz from "../assets/devxyz-portfolio.webp";
-import photography from "../assets/photography-website.webp";
-import wireframe from "../assets/wireframe.webp";
+import wireframe1 from "../assets/wireframe-1.webp";
 import { Image } from "astro:assets";
 import MainLayout from "../layouts/MainLayout.astro";
 import "../styles/global.css";
 ---
 
-<MainLayout title="Miko - Web Dev Portfolio and Projects">
+<MainLayout title="Mikoprn">
   <section aria-labelledby="home">
     <div class="wrapper-contents home">
       <h1 id="home">
@@ -217,6 +217,33 @@ import "../styles/global.css";
     <div class="wrapper-contents works">
       <h2 id="works">Resent Projects</h2>
       <article class="article__content">
+        <Image
+          src={michelle}
+          alt="michelle website image"
+          class="article__img"
+        />
+        <aside class="article__description">
+          <h3>Michelle Young Portfolio</h3>
+          <p>
+            In this project i create a simple responsive portfolio website, with
+            dark/light theme with Astro Js, a modern web framework, primarily
+            focused on building fast and efficient content-driven websites.
+          </p>
+          <div class="article__links">
+            <a
+              href="https://michelle-young.vercel.app/"
+              target="_blank"
+              class="button button-primary">View Live Demo</a
+            >
+            <a
+              href="https://github.com/mikoprn/michelle-young"
+              target="_blank"
+              class="button">Source Code</a
+            >
+          </div>
+        </aside>
+      </article>
+      <article class="article__content">
         <Image src={emilyui} alt="EmilyUi portfolio" class="article__img" />
         <aside class="article__description">
           <h3>EmilyUi Portfolio</h3>
@@ -264,33 +291,7 @@ import "../styles/global.css";
       </article>
       <article class="article__content">
         <Image
-          src={photography}
-          alt="photography website image"
-          class="article__img"
-        />
-        <aside class="article__description">
-          <h3>Photography Responsive Website</h3>
-          <p>
-            In this project i made a static responsive landing page photography
-            website with HTML CSS JS.
-          </p>
-          <div class="article__links">
-            <a
-              href="https://photography--website.pages.dev/"
-              target="_blank"
-              class="button button-primary">View Live Demo</a
-            >
-            <a
-              href="https://github.com/Mikoprn/Photography--website"
-              target="_blank"
-              class="button">Source Code</a
-            >
-          </div>
-        </aside>
-      </article>
-      <article class="article__content">
-        <Image
-          src={wireframe}
+          src={wireframe1}
           alt="Wireframe template website"
           class="article__img"
         />
@@ -352,7 +353,7 @@ import "../styles/global.css";
     border-bottom: var(--border-light);
     border-width: var(--size-xx-small);
     border-color: var(--link-color);
-    border-image: var(--gradient-primary) 1 0%;
+    border-image: var(--gradient) 1 0%;
   }
 
   .about__content {
@@ -411,6 +412,7 @@ import "../styles/global.css";
     padding: 1.5em;
     border-radius: var(--size-x-small);
     transition: var(--transition);
+    color: var(--light-accent);
   }
 
   .services__content:is(:hover, :focus-visible) {
