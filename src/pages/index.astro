@@ -414,11 +414,14 @@ import "../styles/global.css";
     padding: 1.5em;
     border-radius: var(--size-x-small);
     transition: var(--transition);
-    color: var(--light-accent);
   }
 
   .services__content:is(:hover, :focus-visible) {
     background-color: var(--dark-accent);
+  }
+
+  .services__content h3 {
+    font-size: var(--clamp-2-l);
   }
 
   .services__content p {
