@@ -38,9 +38,7 @@ import "../styles/global.css";
 <style>
   .contact {
     max-width: 37.5rem;
-    min-height: calc(90dvh - var(--clamp-5-xl));
-    height: clamp(65dvh, 70%, 75dvh);
-    min-height: 78dvh;
+    height: 79dvh;
     margin-inline: auto;
     display: grid;
     place-content: center;
@@ -50,9 +48,23 @@ import "../styles/global.css";
   }
 
   /* 600px */
-  @media (max-width: 37.5em) {
+  @media (max-width: 1024px) {
     .contact {
-      min-height: 70dvh;
+      height: 76dvh;
+    }
+  }
+
+  /* 700px */
+  @media (max-width: 43.75em) {
+    .contact {
+      height: 60dvh;
+    }
+  }
+
+  /* 600px */
+@media (max-width: 37.5em) {
+    .contact {
+      height: 63dvh;
     }
   }
 </style>
