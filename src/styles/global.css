@@ -408,7 +408,7 @@ main,
 }
 
 .article__content:not(:last-child) {
-    margin-bottom: var(--clamp-5-xl);
+    margin-bottom: var(--clamp-6-base);
 }
 
 .article__content:hover .article__img,
@@ -429,7 +429,7 @@ main,
 }
 
 .article__description p {
-    margin-block: var(--size-small-l) var(--clamp-3-base);
+    margin-block: var(--size-small-l) var(--clamp-1-xl);
 }
 
 .article__links {
