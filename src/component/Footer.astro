@@ -14,14 +14,10 @@
         decoding="async"
       />
     </a>
-    <br />
-    <div class="footer__extra">
-      <small>&copy;2025 - Present</small>
-      <small>| All right reserved | </small>
-      <a href="/" class="logo" title="Back to Home"
-        >Miik<img src="/smile.svg" alt="logo img" />
-      </a>
-    </div>
+    <small>&copy;2025 - Present | All right reserved</small>
+    <a href="/" class="logo" title="Back to Home"
+      >Miik<img src="/smile.svg" alt="logo img" />
+    </a>
   </div>
 </footer>
 
@@ -31,22 +27,15 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: var(--size-small-l);
+    gap: var(--size-base-xs);
     padding-block: 1em;
     border-top: var(--border-dark);
-  }
-
-  .footer__extra {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: var(--size-x-small);
   }
 
   /* 700px */
   @media (max-width: 43.75em) {
     .footer {
+      flex-direction: column;
       justify-content: center;
     }
   }
