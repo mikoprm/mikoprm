@@ -371,7 +371,7 @@ button,
 }
 
 .logo {
-    font-size: var(--size-2-base);
+    font-size: var(--size-2-l);
     font-weight: var(--fw-medium);
     display: flex;
     justify-content: center;
@@ -380,8 +380,8 @@ button,
 }
 
 .logo img {
-    width: var(--clamp-1-xl);
-    height: var(--clamp-1-xl);
+    width: var(--clamp-2-base);
+    height: var(--clamp-2-base);
 }
 
 .logo:is(:hover, :focus-visible) {
