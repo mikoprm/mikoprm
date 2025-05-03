@@ -84,7 +84,8 @@
     --light-accent: #efeff3;
     --dark-base: #000000;
     --dark-mode: #080808;
-    --dark-accent: #202020;
+    --dark-accent: #1e232b;
+    --dark-variant: #202020;
     --grey-200: #e5e7eb;
     --grey-color: #808080;
     --blue-color: #440bd4;
@@ -116,7 +117,7 @@
     --size-2-l: 1.5rem;
     --size-2-xl: 1.75rem;
     --size-3-base: 1.875rem;
-    --size-3-xl: 2.25rem;
+    --size-3-xl: 2rem;
     --size-4-base: 2.5rem;
     --size-4-xl: 3rem;
     --size-5-base: 3.125rem;
@@ -140,18 +141,24 @@
     --clamp-2-l: clamp(1.25rem, 1.179rem + 0.357vw, 1.5rem);
     --clamp-2-xl: clamp(1.5rem, 1.429rem + 0.357vw, 1.75rem);
     --clamp-3-base: clamp(1.625rem, 1.554rem + 0.357vw, 1.875rem);
-    --clamp-3-xl: clamp(2rem, 1.929rem + 0.357vw, 2.25rem);
-    --clamp-4-base: clamp(2.25rem, 2.179rem + 0.357vw, 2.5rem);
-    --clamp-4-xl: clamp(2.5rem, 2.357rem + 0.714vw, 3rem);
+    --clamp-3-xl: clamp(1.5rem, 1.357rem + 0.714vw, 2rem);
+    --clamp-4-base: clamp(2rem, 1.857rem + 0.714vw, 2.5rem);
+    --clamp-4-xl: clamp(2.25rem, 2.036rem + 1.071vw, 3rem);
     --clamp-5-base: clamp(2.625rem, 2.482rem + 0.714vw, 3.125rem);
-    --clamp-5-xl: clamp(3rem, 2.857rem + 0.714vw, 3.5rem);
+    --clamp-5-xl: clamp(2.5rem, 2.214rem + 1.429vw, 3.5rem);
     --clamp-6-base: clamp(3.25rem, 3.107rem + 0.714vw, 3.75rem);
     --clamp-6-xl: clamp(3.5rem, 3.357rem + 0.714vw, 4rem);
     --clamp-7-base: clamp(3.875rem, 3.732rem + 0.714vw, 4.375rem);
     --clamp-7-xl: clamp(4rem, 3.857rem + 0.714vw, 4.5rem);
     --clamp-navbar: clamp(3.5rem, 3.25rem + 1.25vw, 4.375rem);
 
-    /* Font Sizing  */
+    /* Font Sizing 1.200 - Minor Third */
+    --fz-clamp-h1: clamp(2.5rem, 2.214rem + 1.429vw, 3.5rem);
+    --fz-clamp-h2: clamp(2rem, 1.857rem + 0.714vw, 2.5rem);
+    --fz-clamp-h3: clamp(1.75rem, 1.679rem + 0.357vw, 2rem);
+    --fz-clamp-h4: clamp(1.5rem, 1.429rem + 0.357vw, 1.75rem);
+    --fz-clamp-h5: clamp(1.25rem, 1.179rem + 0.357vw, 1.5rem);
+    --fz-clamp-h6: clamp(1.125rem, 1.089rem + 0.179vw, 1.25rem);
     --fz-base: 1rem;
     --fz-large: 1.125rem;
     --fz-clamp-large: clamp(1rem, 0.964rem + 0.179vw, 1.125rem);
@@ -191,7 +198,7 @@ html {
 
 h1,
 .h1 {
-    font-size: var(--clamp-4-base);
+    font-size: var(--fz-clamp-h2);
     font-weight: var(--fw-semiBold);
     line-height: 1.1;
     text-align: center;
@@ -199,49 +206,32 @@ h1,
 
 h2,
 .h2 {
-    font-size: var(--clamp-3-xl);
+    font-size: var(--fz-clamp-h3);
     font-weight: var(--fw-medium);
     line-height: 1.2;
     text-align: center;
-    margin-bottom: var(--clamp-base);
 }
 
 h3,
 .h3 {
-    font-size: var(--clamp-2-xl);
+    font-size: var(--fz-clamp-h4);
     font-weight: var(--fw-medium);
     line-height: 1.2;
 }
 
 h4,
 .h4 {
-    font-size: var(--clamp-2-l);
-    font-weight: var(--fw-medium);
-    line-height: 1.2;
-}
-
-h5,
-.h5 {
-    font-size: var(--clamp-2-base);
-    font-weight: var(--fw-medium);
-    line-height: 1.2;
-}
-
-h6,
-.h6 {
-    font-size: var(--clamp-1-xl);
+    font-size: var(--fz-clamp-h5);
     font-weight: var(--fw-medium);
     line-height: 1.2;
 }
 
 p,
 .p,
-address,
-figcaption,
-input,
-textarea {
+address {
     font-size: var(--fz-large);
     font-weight: var(--fw-light);
+    font-style: normal;
     color: var(--light-accent);
 }
 
@@ -267,7 +257,6 @@ video {
     object-fit: cover;
     object-position: center;
     display: block;
-    border-radius: var(--size-x-small);
 }
 
 a,
@@ -355,7 +344,7 @@ button,
 }
 
 .wrapper-contents {
-    padding-block: min(8%, 2.5rem);
+    padding-block: min(12%, 3rem);
 }
 
 @keyframes animationPrimary {
@@ -371,17 +360,18 @@ button,
 }
 
 .logo {
-    font-size: var(--size-2-l);
+    font-size: var(--clamp-2-l);
     font-weight: var(--fw-medium);
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--link-color);
+    line-height: 0;
 }
 
 .logo img {
-    width: var(--clamp-2-base);
-    height: var(--clamp-2-base);
+    width: var(--clamp-base);
+    height: var(--clamp-base);
 }
 
 .logo:is(:hover, :focus-visible) {
@@ -396,9 +386,8 @@ main,
     animation: var(--animationPrimary);
 }
 
-.article__contents-wrapper {
-    display: grid;
-    gap: var(--clamp-3-base);
+.heading-primary {
+    margin-bottom: var(--clamp-5-base);
 }
 
 .article__content {
@@ -421,6 +410,7 @@ main,
     aspect-ratio: 16 / 9;
     border: var(--border-dark);
     border-width: var(--size-xx-small);
+    border-radius: var(--size-x-small);
     transition: var(--transition);
 }
 
