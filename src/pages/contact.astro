@@ -6,8 +6,8 @@ import "../styles/global.css";
 <MainLayout title="Miko - Contact Me">
   <section aria-labelledby="contact">
     <div class="wrapper-contents contact">
-      <h1 id="contact">Contact Me.</h1>
-      <p>
+      <h2 id="contact" class="h1">Contact Me.</h2>
+      <p class="contact__description">
         I'm open to discussing web development projects or partnership
         opportunities.
         <br />
@@ -47,24 +47,17 @@ import "../styles/global.css";
     gap: var(--clamp-base);
   }
 
-  /* 600px */
-  @media (max-width: 1024px) {
+ /* 1024px */
+  @media (max-width: 64em) {
     .contact {
-      height: 76dvh;
+      height: 77dvh;
     }
   }
 
-  /* 700px */
-  @media (max-width: 43.75em) {
+  /* 425px */
+  @media (max-width: 26.563em) {
     .contact {
-      height: 60dvh;
-    }
-  }
-
-  /* 600px */
-@media (max-width: 37.5em) {
-    .contact {
-      height: 63dvh;
+      height: 72dvh;
     }
   }
 </style>
