@@ -1,4 +1,5 @@
 ---
+import "../styles/global.css";
 ---
 
 <header class="header">
@@ -47,7 +48,7 @@
   }
 
   .header-hidden {
-    transform: translateY(calc(-1 * var(--clamp-5-xl)));
+    transform: translateY(calc(-1 * var(--clamp-navbar)));
   }
 
   .header-scrolled {
@@ -87,8 +88,8 @@
       background-image: var(--gradient);
       padding: var(--size-xx-small);
       border-radius: var(--size-xx-small);
-      width: var(--size-3-xl);
-      height: var(--size-3-xl);
+      width: var(--size-3-base);
+      height: var(--size-3-base);
       display: grid;
       place-items: center;
     }
