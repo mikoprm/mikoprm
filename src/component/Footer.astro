@@ -3,19 +3,24 @@
 
 <footer>
   <div class="wrapper-primary footer">
-    <a href="https://github.com/mikoprn" target="_blank" class="link"
-      ><img
-        src="/github-white.svg"
-        alt="Github"
-        width="28"
-        height="28"
-        title="Github"
-        loading="lazy"
-        decoding="async"
-      />
+    <div class="footer__media">
+      <a href="https://github.com/mikoprn" target="_blank" class="link"
+        ><img
+          src="/github-white.svg"
+          alt="Github"
+          width="26"
+          height="26"
+          title="Github"
+          loading="lazy"
+          decoding="async"
+        />
+      </a>
+    </div>
+    <a href="/" class="logo logo-1" title="Back to Home"
+      >Miik<img src="/smile.svg" alt="logo img" />
     </a>
     <p>&copy;2025 - Present | All right reserved</p>
-    <a href="/" class="logo" title="Back to Home"
+    <a href="/" class="logo logo-2" title="Back to Home"
       >Miik<img src="/smile.svg" alt="logo img" />
     </a>
   </div>
@@ -27,16 +32,39 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: var(--size-base-xs);
+    gap: var(--size-small-base);
     padding-block: 1em;
     border-top: var(--border-dark);
   }
 
-  /* 700px */
-  @media (max-width: 43.75em) {
-    .footer {
-      flex-direction: column;
-      justify-content: center;
+  .footer__media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--size-base-xs);
+  }
+
+  .logo-1 {
+    display: none;
+  }
+
+  .logo-2 {
+    display: flex;
+  }
+
+  /* 425px */
+  @media (max-width: 26.563em) {
+    .footer p {
+      margin-inline: auto;
+    }
+
+    .logo-1 {
+      display: flex;
+      margin-left: auto;
+    }
+
+    .logo-2 {
+      display: none;
     }
   }
 </style>
