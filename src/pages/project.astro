@@ -18,7 +18,9 @@ import "../styles/global.css";
 <MainLayout title="Miko - Project">
   <section aria-labelledby="project">
     <div class="wrapper-contents article__contents-wrapper">
-      <h2 class="h1" id="project">Resent Projects & Source Code</h2>
+      <h2 class="h1 heading-primary" id="project">
+        Resent Projects & Source Code
+      </h2>
       <section aria-labelledby="view" class="tab__heading">
         <h3 id="view">Tab to view</h3>
         <ul class="project__tabs">
@@ -117,33 +119,6 @@ import "../styles/global.css";
 
           <article class="article__content">
             <Image
-              src={coffeeBrow}
-              alt="coffeeBrow website image"
-              class="article__img"
-            />
-            <aside class="article__description">
-              <h3>Coffee Shop Responsive Website</h3>
-              <p>
-                In this project i made a static responsive landing page coffe
-                Shop website with HTML CSS JS.
-              </p>
-              <div class="article__links">
-                <a
-                  href="https://mikoprn.github.io/CoffeeBrow/"
-                  target="_blank"
-                  class="button button-primary">View Live Demo</a
-                >
-                <a
-                  href="https://github.com/Mikoprn/CoffeeBrow"
-                  target="_blank"
-                  class="button">Source Code</a
-                >
-              </div>
-            </aside>
-          </article>
-
-          <article class="article__content">
-            <Image
               src={photography}
               alt="photography website image"
               class="article__img"
@@ -169,7 +144,34 @@ import "../styles/global.css";
             </aside>
           </article>
 
-          <article class="article__content">
+          <!-- <article class="article__content">
+            <Image
+              src={coffeeBrow}
+              alt="coffeeBrow website image"
+              class="article__img"
+            />
+            <aside class="article__description">
+              <h3>Coffee Shop Responsive Website</h3>
+              <p>
+                In this project i made a static responsive landing page coffe
+                Shop website with HTML CSS JS.
+              </p>
+              <div class="article__links">
+                <a
+                  href="https://mikoprn.github.io/CoffeeBrow/"
+                  target="_blank"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a
+                  href="https://github.com/Mikoprn/CoffeeBrow"
+                  target="_blank"
+                  class="button">Source Code</a
+                >
+              </div>
+            </aside>
+          </article> -->
+
+          <!-- <article class="article__content">
             <Image
               src={expreshop}
               alt="Expreshop website image"
@@ -194,9 +196,9 @@ import "../styles/global.css";
                 >
               </div>
             </aside>
-          </article>
+          </article> -->
 
-          <article class="article__content">
+          <!-- <article class="article__content">
             <Image
               src={august}
               alt="August photography website image"
@@ -221,7 +223,7 @@ import "../styles/global.css";
                 >
               </div>
             </aside>
-          </article>
+          </article> -->
         </div>
         <div data-tab-content id="js">
           <article class="article__content">
@@ -337,7 +339,6 @@ import "../styles/global.css";
     border-width: var(--size-xx-small);
     border-color: var(--link-color);
     border-image: var(--gradient) 1 0%;
-    margin-bottom: var(--clamp-base);
   }
 
   .project__tabs {
@@ -345,7 +346,7 @@ import "../styles/global.css";
     flex-wrap: wrap;
     align-items: center;
     gap: var(--clamp-base);
-    margin-bottom: var(--clamp-base);
+    margin-block: var(--clamp-base) var(--clamp-5-base);
   }
 
   .active[data-tab-target] {
