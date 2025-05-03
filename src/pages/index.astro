@@ -27,7 +27,7 @@ import "../styles/global.css";
   </section>
   <section aria-labelledby="about">
     <div class="wrapper-contents about">
-      <h2 id="about">About Me</h2>
+      <h2 class=" heading-primary" id="about">About Me</h2>
       <div class="about__content">
         <Image src={miko} alt="Miko profile picture" class="about__img" />
         <article>
@@ -64,7 +64,7 @@ import "../styles/global.css";
   </section>
   <section aria-labelledby="skills">
     <div class="wrapper-contents skills">
-      <h3 id="skills" class="h4 text-center">
+      <h3 id="skills" class="text-center">
         The skills and tech stack I use :
       </h3>
       <ul aria-labelledby="skills" class="skills__images">
@@ -192,7 +192,7 @@ import "../styles/global.css";
       </ul>
     </div>
   </section>
-  <section aria-labelledby="services">
+  <!-- <section aria-labelledby="services">
     <div class="wrapper-contents services">
       <h2 id="services">Services I Provide</h2>
       <article class="services__wrapper">
@@ -214,10 +214,10 @@ import "../styles/global.css";
         </section>
       </article>
     </div>
-  </section>
+  </section> -->
   <section aria-labelledby="works">
     <div class="wrapper-contents works">
-      <h2 id="works">Resent Projects</h2>
+      <h2 class=" heading-primary" id="works">Resent Projects</h2>
       <article class="article__content">
         <Image
           src={michelle}
@@ -351,7 +351,6 @@ import "../styles/global.css";
   h2 {
     width: fit-content;
     text-align: left;
-    margin-bottom: var(--clamp-4-xl);
     border-bottom: var(--border-light);
     border-width: var(--size-xx-small);
     border-color: var(--link-color);
@@ -366,6 +365,7 @@ import "../styles/global.css";
 
   .about__img {
     width: clamp(12.5rem, 10.5978rem + 10.8696vw, 18.75rem);
+    border-radius: var(--size-x-small);
     pointer-events: none;
     user-select: none;
   }
@@ -386,6 +386,10 @@ import "../styles/global.css";
     gap: var(--clamp-3-base);
   }
 
+  .skills h3 {
+    font-size: var(--clamp-2-l);
+  }
+
   .skills__images {
     display: flex;
     flex-wrap: wrap;
@@ -396,9 +400,7 @@ import "../styles/global.css";
 
   .skills li img {
     width: 100%;
-    height: clamp(var(--size-3-base), 4vw, var(--size-4-base));
-    height: var(--size-4-base);
-    border-radius: 0;
+    height: clamp(2.25rem, 2.179rem + 0.357vw, 2.5rem);
   }
 
   .services__wrapper {
