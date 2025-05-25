@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 import "../styles/global.css";
 import Navbar from "../component/Navbar.astro";
@@ -64,64 +63,3 @@ I like learning new things from other professionals."
     </script>
   </body>
 </html>
-=======
----
-import "../styles/global.css";
-import Navbar from "../component/Navbar.astro";
-import Footer from "../component/Footer.astro";
-const { title } = Astro.props;
----
-
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-    <link rel="canonical" href="https://mikoprn.pages.dev/" />
-    <meta
-      name="description"
-      content="Hi, hello there! My name is Miko. I am self-taught developer, 
-I like learning new things from other professionals. "
-    />
-    <meta
-      name="keywords"
-      content="Miko, Mikoprn, Mikoprn - Developer, HTML, CSS, JavaScript, Astro, Vite, coding, code, Web Development, Web Dev"
-    />
-    <meta name="author" content="Miko" />
-    <!-- Open Graph  -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://mikoprn.pages.dev/" />
-    <meta property="og:title" content="Mikoprn" />
-    <meta
-      property="og:description"
-      content="Hi, hello there! My name is Miko. I am self-taught developer, 
-I like learning new things from other professionals."
-    />
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://mikoprn.pages.dev/" />
-    <meta property="twitter:title" content="Mikoprn" />
-    <meta
-      property="twitter:description"
-      content="Hi, hello there! My name is Miko. I am self-taught developer, 
-I like learning new things from other professionals."
-    />
-    <!-- Robots -->
-    <meta name="robots" content="index, follow" />
-  </head>
-  <body>
-    <div class="wrapper-body">
-      <Navbar />
-      <main class="wrapper-primary main">
-        <slot />
-      </main>
-      <Footer />
-    </div>
-    <script>
-      import "../js/script.js";
-    </script>
-  </body>
-</html>
->>>>>>> dc7a86b (add new file)
