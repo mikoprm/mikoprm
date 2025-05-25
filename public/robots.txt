@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 User-agent: *
+=======
+User-agent: *
+>>>>>>> dc7a86b (add new file)
 Disallow: 

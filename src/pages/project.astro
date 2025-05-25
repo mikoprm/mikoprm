@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 import michelle from "../assets/michelle.webp";
 import wireframe1 from "../assets/wireframe-1.webp";
@@ -365,3 +366,323 @@ import "../styles/global.css";
     animation: var(--animationPrimary);
   }
 </style>
+=======
+---
+import michelle from "../assets/michelle.webp";
+import wireframe1 from "../assets/wireframe-1.webp";
+import emilyui from "../assets/emilyui.webp";
+import devxyz from "../assets/devxyz-portfolio.webp";
+import accordion2 from "../assets/accordion2.webp";
+import accordion from "../assets/accordion.webp";
+import navbar from "../assets/navbar.webp";
+import jrhythm from "../assets/jrhythm.webp";
+import photography from "../assets/photography-website.webp";
+import { Image } from "astro:assets";
+import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/global.css";
+---
+
+<MainLayout title="Miko - Project">
+  <section aria-labelledby="project">
+    <div class="wrapper-contents article__contents-wrapper">
+      <h2 class="h1 heading-primary" id="project">
+        Resent Projects & Source Code
+      </h2>
+      <section aria-labelledby="view" class="tab__heading">
+        <h3 id="view">Tab to view</h3>
+        <ul class="project__tabs">
+          <li>
+            <button data-tab-target="#landingPage" class="tag-name active"
+              >Landing Page</button
+            >
+          </li>
+          <li>
+            <button data-tab-target="#js" class="tag-name">Javascript</button>
+          </li>
+          <li>
+            <button data-tab-target="#others" class="tag-name">Others</button>
+          </li>
+          <li>
+            <button data-tab-target="#blog" class="tag-name">Blog</button>
+          </li>
+        </ul>
+      </section>
+      <div class="tab__contents">
+        <div data-tab-content id="landingPage" class="active">
+          <article class="article__content">
+            <Image
+              src={michelle}
+              alt="michelle website image"
+              class="article__img"
+            />
+            <aside class="article__description">
+              <h3>Michelle Young Portfolio</h3>
+              <p>
+                In this project i create a simple responsive portfolio website,
+                with dark/light theme with Astro Js, a modern web framework,
+                primarily focused on building fast and efficient content-driven
+                websites.
+              </p>
+              <div class="article__links">
+                <a
+                  href="https://michelle-young.vercel.app/"
+                  target="_blank"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a
+                  href="https://github.com/mikoprn/michelle-young"
+                  target="_blank"
+                  class="button">Source Code</a
+                >
+              </div>
+            </aside>
+          </article>
+
+          <article class="article__content">
+            <Image src={emilyui} alt="EmilyUi portfolio" class="article__img" />
+            <aside class="article__description">
+              <h3>EmilyUi Portfolio</h3>
+              <p>
+                In this project i create a simple responsive portfolio website
+                with HTML CSS JS & Vite Js, with dark/light theme. The website
+                will also remember the theme so that the stored theme will be
+                used when the user refreshes or returns to the website after a
+                few days.
+              </p>
+              <div class="article__links">
+                <a
+                  href="https://emilyui.vercel.app/"
+                  target="_blank"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a
+                  href="https://github.com/mikoprn/EmilyUi"
+                  target="_blank"
+                  class="button">Source Code</a
+                >
+              </div>
+            </aside>
+          </article>
+
+          <article class="article__content">
+            <Image src={devxyz} alt="Devxyz portfolio" class="article__img" />
+            <aside class="article__description">
+              <h3>Devxyz Portfolio</h3>
+              <p>
+                In this project i made a static responsive website with HTML CSS
+                JS & Vite Js.
+              </p>
+              <div class="article__links">
+                <a
+                  href="https://devxyz.vercel.app/"
+                  target="_blank"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a
+                  href="https://github.com/Mikoprn/Devxyz"
+                  target="_blank"
+                  class="button">Source Code</a
+                >
+              </div>
+            </aside>
+          </article>
+
+          <article class="article__content">
+            <Image
+              src={photography}
+              alt="photography website image"
+              class="article__img"
+            />
+            <aside class="article__description">
+              <h3>Photography Responsive Website</h3>
+              <p>
+                In this project i made a static responsive landing page
+                photography website with HTML CSS JS.
+              </p>
+              <div class="article__links">
+                <a
+                  href="https://photography--website.pages.dev/"
+                  target="_blank"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a
+                  href="https://github.com/Mikoprn/Photography--website"
+                  target="_blank"
+                  class="button">Source Code</a
+                >
+              </div>
+            </aside>
+          </article>
+        </div>
+        <div data-tab-content id="js">
+          <article class="article__content">
+            <Image
+              src={navbar}
+              alt="Responsive navigation bar"
+              class="article__img"
+            />
+            <aside class="article__description">
+              <h3>Responsive Navigation Bar</h3>
+              <p>
+                In this project i made a responsive navigation with HTML CSS &
+                JS, with menu slide below header/navbar.
+              </p>
+              <div class="article__links">
+                <a
+                  href="https://mikoprn.github.io/Resnav/"
+                  target="_blank"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a
+                  href="https://github.com/Mikoprn/Resnav"
+                  target="_blank"
+                  class="button">Source Code</a
+                >
+              </div>
+            </aside>
+          </article>
+          <article class="article__content">
+            <Image src={accordion} alt="Accordion FAQ" class="article__img" />
+            <aside class="article__description">
+              <h3>Accordion FAQ</h3>
+              <p>
+                In this project i made a simple Accordion FAQ using HTML CSS &
+                JavaScript.
+              </p>
+              <div class="article__links">
+                <a
+                  href="https://mikoprn.github.io/Accordion/"
+                  target="_blank"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a
+                  href="https://github.com/Mikoprn/Accordion"
+                  target="_blank"
+                  class="button">Source Code</a
+                >
+              </div>
+            </aside>
+          </article>
+          <article class="article__content">
+            <Image src={accordion2} alt="Accordion FAQ" class="article__img" />
+            <aside class="article__description">
+              <h3>Accordion FAQ Style 2</h3>
+              <p>
+                In this project i made a simple Accordion FAQ with first
+                question open using HTML CSS & JavaScript.
+              </p>
+              <div class="article__links">
+                <a
+                  href="https://mikoprn.github.io/Accordion-2/"
+                  target="_blank"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a
+                  href="https://github.com/Mikoprn/Accordion-2"
+                  target="_blank"
+                  class="button">Source Code</a
+                >
+              </div>
+            </aside>
+          </article>
+        </div>
+        <div data-tab-content id="others">
+          <article class="article__content">
+            <Image
+              src={wireframe1}
+              alt="Wireframe 1 template website"
+              class="article__img"
+            />
+            <aside class="article__description">
+              <h3>Wireframe template website</h3>
+              <p>
+                Wireframe template website HTML CSS JS, with dark / light theme
+                toggle. The website will also remember the theme so that the
+                stored theme will be used when the user refreshes or returns to
+                the website after a few days.
+              </p>
+              <div class="article__links">
+                <a
+                  href="https://wireframe-1.vercel.app/"
+                  target="_blank"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a
+                  href="https://github.com/mikoprn/wireframe-1"
+                  target="_blank"
+                  class="button">Source Code</a
+                >
+              </div>
+            </aside>
+          </article>
+        </div>
+        <div data-tab-content id="blog">
+          <article class="article__content">
+            <Image
+              src={jrhythm}
+              alt="jrhythm website image"
+              class="article__img"
+            />
+            <aside class="article__description">
+              <h3>James Rhythm Blog</h3>
+              <p>
+                In this project i create a simple responsive blog website, with
+                dark/light theme with Astro Js, based on Asto Js docs tutorial
+                build blog without using Content Collection. The content inside
+                the blog is based on James Q Quick tutorial build blog at
+                youtube.
+              </p>
+              <div class="article__links">
+                <a
+                  href="https://jrhythm.vercel.app/"
+                  target="_blank"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a
+                  href="https://github.com/mikoprn/jrhythm"
+                  target="_blank"
+                  class="button">Source Code</a
+                >
+              </div>
+            </aside>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .tab__heading h3 {
+      width: fit-content;
+      border-bottom: var(--border-light);
+      border-width: var(--size-xx-small);
+      border-color: var(--link-color);
+      border-image: var(--gradient) 1 0%;
+    }
+
+    .project__tabs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--clamp-base);
+      margin-block: var(--clamp-base) var(--clamp-5-base);
+    }
+
+    .active[data-tab-target] {
+      color: var(--dark-base);
+      background-color: var(--accent-color);
+    }
+
+    [data-tab-content] {
+      display: none;
+      opacity: 0;
+    }
+
+    .active[data-tab-content] {
+      display: block;
+      opacity: 1;
+      animation: var(--animationPrimary);
+    }
+  </style>
+</MainLayout>
+>>>>>>> dc7a86b (add new file)
