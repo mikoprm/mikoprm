@@ -346,7 +346,7 @@ button,
 }
 
 .wrapper-contents {
-    padding-block: min(12%, 3rem);
+    padding-block: min(8%, 3rem);
 }
 
 @keyframes animationPrimary {
