@@ -4,6 +4,7 @@ import michelle from "../assets/michelle.webp";
 import emilyui from "../assets/emilyui.webp";
 import devxyz from "../assets/devxyz-portfolio.webp";
 import wireframe1 from "../assets/wireframe-1.webp";
+import jrhythm from "../assets/jrhythm.webp";
 import { Image } from "astro:assets";
 import MainLayout from "../layouts/MainLayout.astro";
 import "../styles/global.css";
@@ -27,7 +28,7 @@ import "../styles/global.css";
   </section>
   <section aria-labelledby="about">
     <div class="wrapper-contents about">
-      <h2 class=" heading-primary" id="about">About Me</h2>
+      <h2 class="heading-primary" id="about">About Me</h2>
       <div class="about__content">
         <Image src={miko} alt="Miko profile picture" class="about__img" />
         <article>
@@ -64,9 +65,7 @@ import "../styles/global.css";
   </section>
   <section aria-labelledby="skills">
     <div class="wrapper-contents skills">
-      <h3 id="skills" class="text-center">
-        The skills and tech stack I use :
-      </h3>
+      <h3 id="skills" class="text-center">The skills and tech stack I use :</h3>
       <ul aria-labelledby="skills" class="skills__images">
         <li>
           <img
@@ -217,7 +216,31 @@ import "../styles/global.css";
   </section> -->
   <section aria-labelledby="works">
     <div class="wrapper-contents works">
-      <h2 class=" heading-primary" id="works">Resent Projects</h2>
+      <h2 class="heading-primary" id="works">Resent Projects</h2>
+      <article class="article__content">
+        <Image src={jrhythm} alt="jrhythm website image" class="article__img" />
+        <aside class="article__description">
+          <h3>James Rhythm Blog</h3>
+          <p>
+            In this project i create a simple responsive blog website, with
+            dark/light theme with Astro Js, based on Asto Js docs tutorial build
+            blog without using Content Collection. The content inside the blog
+            is based on James Q Quick tutorial build blog at youtube.
+          </p>
+          <div class="article__links">
+            <a
+              href="https://jrhythm.vercel.app/"
+              target="_blank"
+              class="button button-primary">View Live Demo</a
+            >
+            <a
+              href="https://github.com/mikoprn/jrhythm"
+              target="_blank"
+              class="button">Source Code</a
+            >
+          </div>
+        </aside>
+      </article>
       <article class="article__content">
         <Image
           src={michelle}
