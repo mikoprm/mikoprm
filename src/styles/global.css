@@ -421,7 +421,7 @@ main,
 }
 
 .article__description p {
-    margin-block: var(--size-small-l) var(--clamp-1-xl);
+    margin-block: var(--size-small-xl) var(--clamp-2-base);
 }
 
 .article__links {
