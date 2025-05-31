@@ -1,4 +1,6 @@
 ---
+import starlight from "../assets/starlight.webp";
+import blogxyz from "../assets/blogxyz.webp";
 import jrhythm from "../assets/jrhythm.webp";
 import michelle from "../assets/michelle.webp";
 import wireframe1 from "../assets/wireframe-1.webp";
@@ -220,6 +222,62 @@ import "../styles/global.css";
         <div data-tab-content id="blog">
           <article class="article__content">
             <Image
+              src={blogxyz}
+              alt="blogxyz website image"
+              class="article__img"
+            />
+            <aside class="article__description">
+              <h3>Blogxyz-astro</h3>
+              <p>
+                This project is a continuation of James Rhythm Blog. In this
+                project i create a simple responsive blog website, with
+                dark/light theme with Astro Js version 5, based on Astro Js docs tutorial
+                build blog using Content Collection.
+              </p>
+              <div class="article__links">
+                <a
+                  href="https://blogxyz-astro.vercel.app/"
+                  target="_blank"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a
+                  href="https://github.com/mikoprn/blogxyz-astro"
+                  target="_blank"
+                  class="button">Source Code</a
+                >
+              </div>
+            </aside>
+          </article>
+          <article class="article__content">
+            <Image
+              src={starlight}
+              alt="starlight website image"
+              class="article__img"
+            />
+            <aside class="article__description">
+              <h3>Starlight Documentation Website</h3>
+              <p>
+                Cool website from Astro themes : Starlight is a full-featured,
+                eco-friendly, accessible-by-default documentation theme built on
+                Astro. Everything you need to build a stellar documentation
+                website. Fast, accessible, and easy-to-use.
+              </p>
+              <div class="article__links">
+                <a
+                  href="https://starlight.astro.build/"
+                  target="_blank"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a
+                  href="https://github.com/withastro/starlight"
+                  target="_blank"
+                  class="button">Source Code</a
+                >
+              </div>
+            </aside>
+          </article>
+          <article class="article__content">
+            <Image
               src={jrhythm}
               alt="jrhythm website image"
               class="article__img"
@@ -228,7 +286,7 @@ import "../styles/global.css";
               <h3>James Rhythm Blog</h3>
               <p>
                 In this project i create a simple responsive blog website, with
-                dark/light theme with Astro Js, based on Asto Js docs tutorial
+                dark/light theme with Astro Js version 5, based on Asto Js docs tutorial
                 build blog without using Content Collection. The content inside
                 the blog is based on James Q Quick tutorial build blog at
                 youtube.
