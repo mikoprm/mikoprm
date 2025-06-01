@@ -55,10 +55,6 @@ import "../styles/global.css";
     transform: translateY(calc(-1 * var(--clamp-navbar)));
   }
 
-  .header-scrolled {
-    background-color: var(--dark);
-  }
-
   .nav {
     display: flex;
     justify-content: space-between;
@@ -80,13 +76,13 @@ import "../styles/global.css";
     transition: var(--transition);
   }
 
-  .nav__link:is(:hover, :focus-visible) {
-    color: var(--link-color);
-  }
-
   .nav__link.active {
     font-weight: var(--fw-medium);
-    border-bottom-color: var(--blue-700);
+    border-bottom: var(--size-xx-small) solid var(--blue-700);
+  }
+
+  .nav__link:is(:hover, :focus-visible) {
+    color: var(--link-color);
   }
 
   .nav__mobile-btn {
