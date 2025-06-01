@@ -8,14 +8,14 @@ import "../styles/global.css";
       >Miik<img src="/smile.svg" alt="logo img" />
     </a>
     <menu class="nav__menu">
-      <li><a href="/" class="nav__link" data-navLink>Home</a></li>
+      <li><a href="/" class="nav__link">Home</a></li>
       <li>
-        <a href="/project" class="nav__link" data-navLink
+        <a href="/project" class="nav__link"
           >Projects & Source Code</a
         >
       </li>
-      <li><a href="/design" class="nav__link" data-navLink>Web Design</a></li>
-      <li><a href="/contact" class="nav__link" data-navLink>Contact</a></li>
+      <li><a href="/design" class="nav__link">Web Design</a></li>
+      <li><a href="/contact" class="nav__link">Contact</a></li>
     </menu>
 
     <div class="nav__mobile-btn">
@@ -84,7 +84,7 @@ import "../styles/global.css";
     color: var(--link-color);
   }
 
-  .nav__link[aria-current="page"] {
+  .nav__link.active {
     font-weight: var(--fw-medium);
     border-bottom-color: var(--blue-700);
   }

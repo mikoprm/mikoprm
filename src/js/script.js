@@ -1,24 +1,23 @@
   // Header on scroll
-  const header = document.querySelector("header");
+  const header = document.querySelector(".header");
   let lastScrollY = window.scrollY;
 
   window.addEventListener("scroll", () => {
     if (lastScrollY < window.scrollY) {
       header.classList.add("header-hidden");
-      // header.classList.remove("header-scrolled");
     } else {
       header.classList.remove("header-hidden");
-      // header.classList.add("header-scrolled");
     }
     lastScrollY = window.scrollY;
   });
 
   // Active Link Navbar In Current Page
-  const navLinks = document.querySelectorAll("[data-navLink]");
-
+  const navLinks = document.querySelectorAll(".nav__link");
+  const currentURL = window.location.href;
+  
   navLinks.forEach((link) => {
-    if (link.getAttribute("href") === window.location.pathname) {
-      link.setAttribute("aria-current", "page");
+    if (link.href === currentURL) {
+      link.classList.add("active");
     }
   });
 
