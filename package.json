@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "mikoprn",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -8,6 +8,6 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "astro": "^5.2.5"
+    "astro": "^5.8.1"
   }
 }
