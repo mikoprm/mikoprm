@@ -1,6 +1,5 @@
 ---
 import "../styles/global.css";
-const pathname = Astro.url.pathname;
 ---
 
 <header class="header">
@@ -9,44 +8,13 @@ const pathname = Astro.url.pathname;
       >Miik<img src="/smile.svg" alt="logo img" />
     </a>
     <menu class="nav__menu">
-      <li>
-        <a
-          href="/"
-          class={pathname === "/" ? "nav__link" : ""}
-          aria-current="page">Home</a
-        >
-      </li>
-      <li>
-        <a
-          href="/project"
-          class={pathname === "/project" ? "nav__link" : ""}
-          aria-current="page">Projects & Source Code</a
-        >
-      </li>
-      <li>
-        <a
-          href="/design"
-          class={pathname === "/design" ? "nav__link" : ""}
-          aria-current="page">Web Design</a
-        >
-      </li>
-      <li>
-        <a
-          href="/contact"
-          class={pathname === "/contact" ? "nav__link" : ""}
-          aria-current="page">Contact</a
-        >
-      </li>
-    </menu>
-    <!-- <menu class="nav__menu">
       <li><a href="/" class="nav__link">Home</a></li>
       <li>
         <a href="/project" class="nav__link">Projects & Source Code</a>
       </li>
       <li><a href="/design" class="nav__link">Web Design</a></li>
       <li><a href="/contact" class="nav__link">Contact</a></li>
-    </menu> -->
-
+    </menu>
     <div class="nav__mobile-btn">
       <img
         src="/menuBtn.svg"
