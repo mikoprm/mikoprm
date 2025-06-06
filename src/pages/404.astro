@@ -1,0 +1,31 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/global.css";
+---
+
+<MainLayout title="Page Not Found">
+  <section aria-labelledby="pageNotFound">
+    <div class="wrapper-contents pageNotFound grid-center gap-4">
+      <h1 id="pageNotFound">Page Not Found</h1>
+      <h2>Seem to have misplaced something !</h2>
+      <a href="/" class="button button-accent">Back to home</a>
+    </div>
+  </section>
+</MainLayout>
+
+<style>
+  .pageNotFound {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    gap: var(--clamp-4-base);
+    min-height: 75dvh;
+  }
+
+  /* 425px */
+  @media (max-width: 26.563em) {
+    .pageNotFound {
+      min-height: 70dvh;
+    }
+  }
+</style>
