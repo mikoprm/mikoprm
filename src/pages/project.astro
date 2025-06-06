@@ -1,4 +1,5 @@
 ---
+import themesxyz from "../assets/themesxyz.webp";
 import sobasic from "../assets/sobasic.webp";
 import starlight from "../assets/starlight.webp";
 import blogxyz from "../assets/blogxyz.webp";
@@ -31,10 +32,15 @@ import "../styles/global.css";
             >
           </li>
           <li>
-            <button data-tab-target="#js" class="tag-name">Javascript</button>
+            <button data-tab-target="#basic" class="tag-name"
+              >HTML, CSS, JS</button
+            >
           </li>
           <li>
-            <button data-tab-target="#blog" class="tag-name">Blog</button>
+            <button data-tab-target="#astro" class="tag-name">Astro JS</button>
+          </li>
+          <li>
+            <button data-tab-target="#react" class="tag-name">React JS</button>
           </li>
           <li>
             <button data-tab-target="#others" class="tag-name">Others</button>
@@ -148,7 +154,33 @@ import "../styles/global.css";
             </aside>
           </article>
         </div>
-        <div data-tab-content id="js">
+        <div data-tab-content id="basic">
+          <article class="article__content">
+            <Image
+              src={themesxyz}
+              alt="Responsive navigation bar"
+              class="article__img"
+            />
+            <aside class="article__description">
+              <h3>Dark/light Themes</h3>
+              <p>
+                In this project i'm trying to make dark/light themes without
+                flicker for website with HTML, CSS, Javascript.
+              </p>
+              <div class="article__links">
+                <a
+                  href="https://themesxyz.vercel.app/"
+                  target="_blank"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a
+                  href="https://github.com/mikoprn/themesxyz"
+                  target="_blank"
+                  class="button">Source Code</a
+                >
+              </div>
+            </aside>
+          </article>
           <article class="article__content">
             <Image
               src={navbar}
@@ -220,7 +252,7 @@ import "../styles/global.css";
             </aside>
           </article>
         </div>
-        <div data-tab-content id="blog">
+        <div data-tab-content id="astro">
           <article class="article__content">
             <Image
               src={blogxyz}
@@ -243,6 +275,35 @@ import "../styles/global.css";
                 >
                 <a
                   href="https://github.com/mikoprn/blogxyz-astro"
+                  target="_blank"
+                  class="button">Source Code</a
+                >
+              </div>
+            </aside>
+          </article>
+          <article class="article__content">
+            <Image
+              src={jrhythm}
+              alt="jrhythm website image"
+              class="article__img"
+            />
+            <aside class="article__description">
+              <h3>James Rhythm Blog</h3>
+              <p>
+                In this project i create a simple responsive blog website, with
+                dark/light theme with Astro Js version 5, based on Asto Js docs
+                tutorial build blog without using Content Collection. The
+                content inside the blog is based on James Q Quick tutorial build
+                blog at youtube.
+              </p>
+              <div class="article__links">
+                <a
+                  href="https://jrhythm.vercel.app/"
+                  target="_blank"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a
+                  href="https://github.com/mikoprn/jrhythm"
                   target="_blank"
                   class="button">Source Code</a
                 >
@@ -279,43 +340,12 @@ import "../styles/global.css";
           </article>
           <article class="article__content">
             <Image
-              src={jrhythm}
-              alt="jrhythm website image"
-              class="article__img"
-            />
-            <aside class="article__description">
-              <h3>James Rhythm Blog</h3>
-              <p>
-                In this project i create a simple responsive blog website, with
-                dark/light theme with Astro Js version 5, based on Asto Js docs
-                tutorial build blog without using Content Collection. The
-                content inside the blog is based on James Q Quick tutorial build
-                blog at youtube.
-              </p>
-              <div class="article__links">
-                <a
-                  href="https://jrhythm.vercel.app/"
-                  target="_blank"
-                  class="button button-primary">View Live Demo</a
-                >
-                <a
-                  href="https://github.com/mikoprn/jrhythm"
-                  target="_blank"
-                  class="button">Source Code</a
-                >
-              </div>
-            </aside>
-          </article>
-        </div>
-        <div data-tab-content id="others">
-          <article class="article__content">
-            <Image
               src={sobasic}
               alt="Sobasic template website"
               class="article__img"
             />
             <aside class="article__description">
-              <h3>So Basic - Blog Template</h3>
+              <h3>So Basic - Template</h3>
               <p>
                 A cool website from Astro JS themes. So Basic is perfect for
                 your personal or professional blog. You can focus on writing
@@ -340,6 +370,11 @@ import "../styles/global.css";
               </div>
             </aside>
           </article>
+        </div>
+        <div data-tab-content id="react">
+          <h2>Coming Soon...</h2>
+        </div>
+        <div data-tab-content id="others">
           <article class="article__content">
             <Image
               src={wireframe1}

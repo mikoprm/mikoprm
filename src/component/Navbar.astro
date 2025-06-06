@@ -51,7 +51,7 @@ import "../styles/global.css";
     z-index: 9999;
   }
 
-  .header-hidden {
+  .scrolled {
     transform: translateY(calc(-1 * var(--clamp-navbar)));
   }
 
@@ -75,14 +75,14 @@ import "../styles/global.css";
     border-bottom: var(--size-xx-small) solid transparent;
     transition: var(--transition);
   }
-
-  .nav__link.active {
-    font-weight: var(--fw-medium);
-    border-bottom: var(--size-xx-small) solid var(--blue-700);
-  }
-
+  
   .nav__link:is(:hover, :focus-visible) {
     color: var(--link-color);
+  }
+
+  .nav__link[aria-current="page"] {
+    font-weight: var(--fw-medium);
+    border-bottom-color: var(--blue-700);
   }
 
   .nav__mobile-btn {
