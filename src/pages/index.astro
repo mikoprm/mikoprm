@@ -1,6 +1,6 @@
 ---
 import miko from "../assets/miko.webp";
-import michelle from "../assets/michelle.webp";
+import reanalyst from "../assets/reanalyst.webp";
 import emilyui from "../assets/emilyui.webp";
 import devxyz from "../assets/devxyz-portfolio.webp";
 import wireframe1 from "../assets/wireframe-1.webp";
@@ -195,6 +195,33 @@ import "../styles/global.css";
     <div class="wrapper-contents works">
       <h2 class="heading-primary" id="works">Resent Projects</h2>
       <article class="article__content">
+        <Image
+          src={reanalyst}
+          alt="reanalyst website image"
+          class="article__img"
+        />
+        <aside class="article__description">
+          <h3>Reanalyst Portfolio</h3>
+          <p>
+            This project i build with React JS 19, a simple responsive portfolio
+            website for professional Business and Data Analyst with dark/light
+            theme.
+          </p>
+          <div class="article__links">
+            <a
+              href="https://reanalyst.vercel.app/"
+              target="_blank"
+              class="button button-primary">View Live Demo</a
+            >
+            <a
+              href="https://github.com/mikoprm/reanalyst"
+              target="_blank"
+              class="button">Source Code</a
+            >
+          </div>
+        </aside>
+      </article>
+      <article class="article__content">
         <Image src={blogxyz} alt="blogxyz website image" class="article__img" />
         <aside class="article__description">
           <h3>Blogxyz-astro</h3>
@@ -212,33 +239,6 @@ import "../styles/global.css";
             >
             <a
               href="https://github.com/mikoprn/blogxyz-astro"
-              target="_blank"
-              class="button">Source Code</a
-            >
-          </div>
-        </aside>
-      </article>
-      <article class="article__content">
-        <Image
-          src={michelle}
-          alt="michelle website image"
-          class="article__img"
-        />
-        <aside class="article__description">
-          <h3>Michelle Young Portfolio</h3>
-          <p>
-            In this project i create a simple responsive portfolio website, with
-            dark/light theme with Astro Js, a modern web framework, primarily
-            focused on building fast and efficient content-driven websites.
-          </p>
-          <div class="article__links">
-            <a
-              href="https://michelle-young.vercel.app/"
-              target="_blank"
-              class="button button-primary">View Live Demo</a
-            >
-            <a
-              href="https://github.com/mikoprn/michelle-young"
               target="_blank"
               class="button">Source Code</a
             >
