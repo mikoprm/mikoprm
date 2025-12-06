@@ -1,4 +1,5 @@
 ---
+import rmpa from "../assets/rmpa.webp";
 import reanalyst from "../assets/reanalyst.webp";
 import reset from "../assets/css-reset.webp";
 import desigline from "../assets/desigline.webp";
@@ -435,6 +436,28 @@ import "../styles/global.css";
         </div>
         <div data-tab-content id="react">
           <article class="article__content">
+            <Image src={rmpa} alt="rmpa website image" class="article__img" />
+            <aside class="article__description">
+              <h3>RMPA wireframes</h3>
+              <p>
+                This project i build a responsive multi page app with React JS
+                19 with dark/light theme.
+              </p>
+              <div class="article__links">
+                <a
+                  href="https://mpa-react-app.vercel.app/"
+                  target="_blank"
+                  class="button button-primary">View Live Demo</a
+                >
+                <a
+                  href="https://github.com/mikoprm/mpa-react-app"
+                  target="_blank"
+                  class="button">Source Code</a
+                >
+              </div>
+            </aside>
+          </article>
+          <article class="article__content">
             <Image
               src={reanalyst}
               alt="reanalyst website image"
@@ -530,4 +553,3 @@ import "../styles/global.css";
     animation: var(--animationPrimary);
   }
 </style>
-
