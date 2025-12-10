@@ -12,14 +12,14 @@ window.addEventListener("scroll", () => {
 });
 
 // Active Link Navbar In Current Page
-const currentPage = window.location.href;
-const navLinks = document.querySelectorAll(".nav__link");
+// const currentPage = window.location.href;
+// const navLinks = document.querySelectorAll(".nav__link");
 
-navLinks.forEach((link) => {
-  if (link.href === currentPage) {
-    link.setAttribute("aria-current", "page");
-  }
-});
+// navLinks.forEach((link) => {
+//   if (link.href === currentPage) {
+//     link.setAttribute("aria-current", "page");
+//   }
+// });
 
 // Mobile Navigation
 const menuBtn = document.querySelector(".nav__mobile-btn");
