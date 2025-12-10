@@ -69,8 +69,8 @@ import "../styles/global.css";
 
   .nav__link {
     color: var(--light-accent);
-    padding-bottom: var(--size-xx-small);
-    border-bottom: var(--size-xx-small) solid transparent;
+    text-decoration: underline transparent solid var(--size-xx-small);
+    text-underline-offset: var(--size-small-base);
     transition: var(--transition);
   }
 
@@ -78,9 +78,10 @@ import "../styles/global.css";
     color: var(--link-color);
   }
 
-  .nav__link.active {
+  .nav__link[aria-current="page"] {
+    color: var(--light-base);
     font-weight: var(--fw-medium);
-    border-bottom-color: var(--blue-700);
+    text-decoration-color: var(--blue-700);
   }
 
   .nav__mobile-btn {

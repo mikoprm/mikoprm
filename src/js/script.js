@@ -17,9 +17,7 @@ const navLinks = document.querySelectorAll(".nav__link");
 
 navLinks.forEach((link) => {
   if (link.href === currentPage) {
-    link.classList.add("active");
-  } else {
-    link.classList.remove("active");
+    link.setAttribute("aria-current", "page");
   }
 });
 
