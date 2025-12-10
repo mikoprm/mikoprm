@@ -12,8 +12,28 @@ window.addEventListener("scroll", () => {
 });
 
 // Active Link Navbar In Current Page
-document.querySelectorAll(".nav__link").forEach((link) => {
-  if (link.href === window.location.href) {
+// document.querySelectorAll(".nav__link").forEach((link) => {
+//   if (link.href === window.location.href) {
+//     link.setAttribute("aria-current", "page");
+//   }
+// });
+
+const currentPath = window.location.pathname;
+const navLinks = document.querySelectorAll(".nav__link"); // Adjust selector as needed
+
+navLinks.forEach((link) => {
+  // Extract the path from the link's href
+  const linkPath = new URL(link.href).pathname;
+
+  if (linkPath === currentPath) {
+    link.classList.add("active");
+    // Optionally, for accessibility, you can also set aria-current
+    link.setAttribute("aria-current", "page");
+  }
+
+  // Special handling for the homepage if its path is just '/' and others might be '/index.html'
+  if (currentPath === "/" && linkPath === "/index.html") {
+    link.classList.add("active");
     link.setAttribute("aria-current", "page");
   }
 });
