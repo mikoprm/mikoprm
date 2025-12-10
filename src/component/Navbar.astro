@@ -1,5 +1,4 @@
 ---
-const currentPath = Astro.url.pathname;
 import "../styles/global.css";
 ---
 
@@ -8,32 +7,14 @@ import "../styles/global.css";
     <a href="/" class="logo" title="Back to Home"
       >Miik<img src="/smile.svg" alt="logo img" />
     </a>
-
     <menu class="nav__menu">
-      <li><a class={currentPath === "/" ? "active nav__link" : ""} href="/">Home</a></li>
-      <li>
-        <a class={currentPath === "/project" ? "active nav__link" : ""} href="/project"
-          >Projects & Source Code</a
-        >
-      </li>
-      <li>
-        <a class={currentPath === "/design" ? "active nav__link" : ""} href="/design"
-          >Web Design</a>
-      </li>
-      <li>
-        <a class={currentPath === "/contact" ? "active nav__link" : ""} href="/contact"
-          >Contact</a>
-      </li>
-    </menu>
-
-    <!-- <menu class="nav__menu">
       <li><a href="/" class="nav__link">Home</a></li>
       <li>
         <a href="/project" class="nav__link">Projects & Source Code</a>
       </li>
       <li><a href="/design" class="nav__link">Web Design</a></li>
       <li><a href="/contact" class="nav__link">Contact</a></li>
-    </menu> -->
+    </menu>
     <div class="nav__mobile-btn">
       <img
         src="/menuBtn.svg"
@@ -90,17 +71,14 @@ import "../styles/global.css";
     color: var(--light-accent);
     text-decoration: underline transparent solid var(--size-xx-small);
     text-underline-offset: var(--size-small-base);
-    transition: var(--transition);
   }
 
   .nav__link:is(:hover, :focus-visible) {
     color: var(--link-color);
   }
 
-  .nav__link.active,
-  .nav__link[aria-current="page"] {
+  .nav__link.active {
     color: var(--light-base);
-    font-weight: var(--fw-medium);
     text-decoration-color: var(--blue-700);
   }
 
