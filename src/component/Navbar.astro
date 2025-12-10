@@ -68,6 +68,7 @@ import "../styles/global.css";
   }
 
   .nav__link {
+    color: var(--light-accent);
     padding-bottom: var(--size-xx-small);
     border-bottom: var(--size-xx-small) solid transparent;
     transition: var(--transition);
@@ -77,8 +78,7 @@ import "../styles/global.css";
     color: var(--link-color);
   }
 
-  .nav__link.active,
-  .nav__link[aria-current="page"] {
+  .nav__link.active {
     font-weight: var(--fw-medium);
     border-bottom-color: var(--blue-700);
   }
