@@ -18,23 +18,14 @@ window.addEventListener("scroll", () => {
 //   }
 // });
 
-const currentPath = window.location.pathname;
-const navLinks = document.querySelectorAll(".nav__link"); // Adjust selector as needed
+const currentPage = window.location.href;
+const navLinks = document.querySelectorAll(".nav__link");
 
 navLinks.forEach((link) => {
-  // Extract the path from the link's href
-  const linkPath = new URL(link.href).pathname;
-
-  if (linkPath === currentPath) {
+  if (link.href === currentPage) {
     link.classList.add("active");
-    // Optionally, for accessibility, you can also set aria-current
-    link.setAttribute("aria-current", "page");
-  }
-
-  // Special handling for the homepage if its path is just '/' and others might be '/index.html'
-  if (currentPath === "/" && linkPath === "/index.html") {
-    link.classList.add("active");
-    link.setAttribute("aria-current", "page");
+  } else {
+    link.classList.remove("active");
   }
 });
 
