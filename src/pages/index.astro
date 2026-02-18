@@ -66,8 +66,11 @@ import "../styles/global.css";
   <section aria-labelledby="skills">
     <div class="wrapper-contents skills">
       <h3 id="skills" class="text-center">The skills and tech stack I use :</h3>
-      <ul aria-labelledby="skills" class="skills__images">
-        <li>
+      <ul
+        aria-labelledby="skills"
+        class="skills__images"
+      >
+        <li class="skill__glass-card">
           <img
             src="/html5.svg"
             alt="HTML"
@@ -78,7 +81,7 @@ import "../styles/global.css";
             decoding="async"
           />
         </li>
-        <li>
+        <li class="skill__glass-card">
           <img
             src="/css.svg"
             alt="CSS"
@@ -89,7 +92,7 @@ import "../styles/global.css";
             decoding="async"
           />
         </li>
-        <li>
+        <li class="skill__glass-card">
           <img
             src="/sass.svg"
             alt="SCSS"
@@ -100,7 +103,7 @@ import "../styles/global.css";
             decoding="async"
           />
         </li>
-        <li>
+        <li class="skill__glass-card">
           <img
             src="/javascript.svg"
             alt="Javascript"
@@ -111,18 +114,18 @@ import "../styles/global.css";
             decoding="async"
           />
         </li>
-        <li>
+        <li class="skill__glass-card">
           <img
             src="/astro-icon.svg"
             alt="Astro JS"
-            width="30"
-            height="70"
+            width="110"
+            height="104"
             title="Astro JS"
             loading="lazy"
             decoding="async"
           />
         </li>
-        <li>
+        <li class="skill__glass-card">
           <img
             src="/react.svg"
             alt="React JS"
@@ -133,7 +136,7 @@ import "../styles/global.css";
             decoding="async"
           />
         </li>
-        <li>
+        <li class="skill__glass-card">
           <img
             src="/vite.svg"
             alt="Vite JS"
@@ -144,7 +147,7 @@ import "../styles/global.css";
             decoding="async"
           />
         </li>
-        <li>
+        <li class="skill__glass-card">
           <img
             src="/nodejs.svg"
             alt="NodeJS"
@@ -155,7 +158,7 @@ import "../styles/global.css";
             decoding="async"
           />
         </li>
-        <li>
+        <li class="skill__glass-card">
           <img
             src="/github-white.svg"
             alt="Github"
@@ -166,7 +169,7 @@ import "../styles/global.css";
             decoding="async"
           />
         </li>
-        <li>
+        <li class="skill__glass-card">
           <img
             src="/vscode.svg"
             alt="Visual Studio Code"
@@ -177,12 +180,12 @@ import "../styles/global.css";
             decoding="async"
           />
         </li>
-        <li>
+        <li class="skill__glass-card">
           <img
             src="/figma.svg"
             alt="Figma"
-            width="38"
-            height="57"
+            width="61"
+            height="80"
             title="Figma"
             loading="lazy"
             decoding="async"
@@ -395,12 +398,23 @@ import "../styles/global.css";
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: var(--clamp-base) var(--clamp-3-base);
+    gap: clamp(0.625rem, 0.214rem + 1.429vw, 1.5rem);
   }
 
-  .skills li img {
+  .skill__glass-card {
+    background-color: #36363634;
+    border: 1px solid #36363644;
+    border-radius: var(--size-x-small);
+    backdrop-filter: blur(var(--size-small-l));
+    padding: clamp(0.313rem, 0.116rem + 0.982vw, 1rem);
+  }
+
+  .skill__glass-card img {
+    --size-8-xl: 5.375rem;
+    --clamp-img: clamp(2.25rem, 1.357rem + 4.464vw, 5.375rem);
+
     width: 100%;
-    height: clamp(2.25rem, 2.179rem + 0.357vw, 2.5rem);
+    height: var(--clamp-img);
   }
 
   .services__wrapper {
