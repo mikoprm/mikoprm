@@ -402,17 +402,20 @@ import "../styles/global.css";
   }
 
   .skill__glass-card {
-    background-color: #3636364f;
-    border: 1px solid #36363644;
+    background-color: #36363638;
+    border: 1px solid #36363696;
     border-radius: var(--size-x-small);
     backdrop-filter: blur(var(--size-small-l));
     padding: clamp(0.313rem, 0.116rem + 0.982vw, 1rem);
+    transition: var(--transition);
+  }
+
+  .skill__glass-card:is(:hover, :focus-visible) {
+    background-color: #36363660;
   }
 
   .skill__glass-card img {
-    --size-8-xl: 5.375rem;
     --clamp-img: clamp(2.25rem, 1.357rem + 4.464vw, 5.375rem);
-
     width: 100%;
     height: var(--clamp-img);
   }
